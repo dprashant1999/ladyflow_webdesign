@@ -1,0 +1,62 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@tailwind base;
+@tailwind components;
+
+body{@apply font-playpen bg-[#FFF3F8];}
+section{@apply relative;}
+.anim{@apply transition-all duration-300;}
+.wrapper{@apply max-w-[1500px] px-5 2xl:px-7 mx-auto;}
+.h1,h1{@apply text-32 md:text-36 lg:text-46 xl:text-56 2xl:text-66 font-semibold text-primary;}
+.h2,h2{@apply text-26 lg:text-36 xl:text-40 2xl:text-50 font-bold text-primary;}
+.h3,h3{@apply text-22 lg:text-24 xl:text-28 2xl:text-32 font-bold text-primary;}
+.h4,h4{@apply text-18 lg:text-20 xl:text-24 font-bold text-primary;}
+.text18{@apply text-14 lg:text-16 xl:text-18;}
+.text26{@apply text-18 lg:text-20 xl:text-22 2xl:text-26;}
+.gra-text{@apply bg-primary_gra text-transparent bg-clip-text;}
+.gra_hover{@apply hover:bg-primary_gra hover:bg-clip-text hover:text-transparent;}
+.gra_ghover{@apply group-hover:bg-primary_gra group-hover:bg-clip-text group-hover:text-transparent;}
+
+.btn span{@apply absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-14 lg:text-16;}
+
+.flo_right {
+  animation: flower_r 3s infinite alternate ease-in-out;
+}
+.flo_left {
+  animation: flower_l 3s infinite alternate ease-in-out;
+}
+@keyframes flower_r {
+  0% {
+     transform: rotate(0);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+      transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  100% {
+      transform: rotate(0);
+  }
+}
+@keyframes flower_l {
+  0% {
+     transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+      transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  100% {
+      transform: rotate(0);
+  }
+}
+@tailwind utilities;
