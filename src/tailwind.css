@@ -16,7 +16,15 @@ section{@apply relative;}
 .gra-text{@apply bg-primary_gra text-transparent bg-clip-text;}
 .gra_hover{@apply hover:bg-primary_gra hover:bg-clip-text hover:text-transparent;}
 .gra_ghover{@apply group-hover:bg-primary_gra group-hover:bg-clip-text group-hover:text-transparent;}
-
+.title_tab.active span .close {
+  display: block;
+}
+.title_tab.active span .open {
+  display: none;
+}
+.title_tab.active span.open {
+  transform: rotate(90deg);
+}
 .btn span{@apply absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-14 lg:text-16;}
 
 .flo_right {
