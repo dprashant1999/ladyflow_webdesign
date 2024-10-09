@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>leadyflow</title>
-  <link rel="stylesheet" href="assets/css/icomoon.css"/>
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.webp"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
@@ -188,236 +187,8 @@
             </div>
           </li>
         </ul>
-        <div class="flex items-center justify-between md:hidden">
-          <img src="assets/images/footer_logo.webp" alt="footer_logo"/>
-          <div class="flex items-center md:hidden cursor-pointer ml-5" onclick="toggleActive('#add','-translate-x-full');">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve">
-              <g>
-                <path d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z" fill="#000s" opacity="1" data-original="#000000"></path>
-              </g>
-            </svg>
-          </div>
-        </div>
       </div>
     </header>
-    <!-- mobile screen sidebar  -->
-    <div class="w-full h-screen bg-black/30 backdrop-blur-sm fixed inset-0 z-50 anim hidden" id="add">
-      <ul class="w-full h-screen max-w-96 p-5 bg-[#FFDEEC] overflow-y-auto">
-        <li class="flex items-center justify-between border-b-2 pb-3 mb-2.5 border-[#EC008C]">
-          <a href="#">
-            <img src="assets/images/footer_logo.webp" alt="footer_logo"/>
-          </a>
-          <span onclick="toggleActive('#add','-translate-x-full');">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m292.2 256 109.9-109.9c10-10 10-26.2 0-36.2s-26.2-10-36.2 0L256 219.8 146.1 109.9c-10-10-26.2-10-36.2 0s-10 26.2 0 36.2L219.8 256 109.9 365.9c-10 10-10 26.2 0 36.2 5 5 11.55 7.5 18.1 7.5s13.1-2.5 18.1-7.5L256 292.2l109.9 109.9c5 5 11.55 7.5 18.1 7.5s13.1-2.5 18.1-7.5c10-10 10-26.2 0-36.2z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
-          </span>
-        </li>
-        <li class="py-2">
-          <div class="flex items-center justify-between title_tab">
-            <a href="#" class="text-16 font-medium text-primary">Our Products</a>
-            <span class="icon-plus text-14 font-extrabold block open"></span>
-          </div>
-          <ul class="space-y-4 w-full bg-white rounded-md p-4 mt-3 inner_content hidden">
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/pads.webp" alt="pads"/>
-                <span class="text-14 text-primary font-normal block gra_hover">Pads</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/tampons.webp" alt="Tampons"/>
-                <span class="text-14 text-primary font-normal block gra_hover">Tampons</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/cup.webp" alt="Menstrual Cup"/>
-                <span class="text-14 text-primary font-normal block gra_hover">Menstrual Cup</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/wipes.webp" alt="Wipes"/>
-                <span class="text-14 text-primary font-normal block gra_hover">Wipes</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/water_bag.webp" alt="bag"/>
-                <span class="text-14 text-primary font-normal block gra_hover">Hot Water Bag</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/first_period_kit.webp" alt="First Period Kit"/>
-                <span class="text-14 text-primary font-normal block gra_hover">First Period Kit</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="text-center space-y-2 flex items-center space-x-5">
-                <img class="max-w-10" src="assets/images/all_products.webp" alt="all products"/>
-                <span class="text-14 gra-text font-light block gra_hover">Shop All</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="py-2">
-          <a href="#" class="text-16 font-medium text-primary">Period Tracker</a>
-        </li>
-        <li class="py-2">
-          <a href="#" class="text-16 font-medium text-primary">Why Us?</a>
-        </li>
-        <li class="py-2">
-          <a href="#" class="text-16 font-medium text-primary">Our App</a>
-        </li>
-        <li class="py-2">
-          <div class="flex items-center justify-between title_tab">
-            <a href="#" class="text-16 font-medium text-primary">Period Education</a>
-            <span class="icon-plus text-14 font-extrabold open"></span>
-          </div>
-          <ul class="bg-white p-4 flex items-center mt-3 rounded-md inner_content">
-            <div class="space-y-2.5 w-full">
-              <div class="w-full">
-                <div class="flex items-center justify-between title_tab_2">
-                  <a href="#" class="text-16 gra-text mb-1">For Girl & Parents</a>
-                  <span class="icon-plus text-14 font-extrabold open"></span>
-                </div>
-                <ul class="rounded-md inner_content_2">
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">My First Period</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">Period Guide</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">Puberty</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">Tips For Parents</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="flex items-center space-x-1">
-                      <span class="text-14 text-secondary gra_hover font-normal block">Explore All For Girl & Woman</span>
-                      <span class="icon-right-arrow text-[10px] gra-text "></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="w-full">
-                <div class="flex items-center justify-between title_tab_2">
-                  <a href="#" class="text-16 gra-text mb-1">For Women</a>
-                  <span class="icon-plus text-14 font-extrabold open"></span>
-                </div>
-                <ul class="rounded-md inner_content_2">
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Cramps & Irregular Bleeding</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Tips for a Better Period</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Vaginal Discharge</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">PMS</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="flex items-center space-x-1">
-                      <span class="text-14 text-secondary gra_hover font-normal block">Explore All For Women</span>
-                      <span class="icon-right-arrow text-[10px] gra-text"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="w-full">
-                <div class="flex items-center justify-between title_tab_2">
-                  <a href="#" class="text-16 gra-text mb-1">Health & Wellness</a>
-                  <span class="icon-plus text-14 font-extrabold open"></span>
-                </div>
-                <ul class="rounded-md inner_content_2">
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Dizziness Before or During Your Period</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Leg Pain During Your Period</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Can a Yeast Infection Delay Your Period?</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Throwing Up On Your Period</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="flex items-center space-x-1">
-                      <span class="text-14 text-secondary gra_hover font-normal block">Explore All Health & Wellness</span>
-                      <span class="icon-right-arrow text-[10px] gra-text"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="w-full">
-                <div class="flex items-center justify-between title_tab_2">
-                  <a href="#" class="text-16 gra-text mb-1">Menstrual Products</a>
-                  <span class="icon-plus text-14 font-extrabold open"></span>
-                </div>
-                <ul class="rounded-md inner_content_2">
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Cuide to Menstrual Pads</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">Postpartum Maternity Pads</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">How Often Should You Change Your Pad?</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="text-14 text-secondary gra_hover font-normal">How to Insert a Tampon</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="" class="flex items-center space-x-1">
-                      <span class="text-14 text-secondary gra_hover font-normal block">Explore All Menstrual Products</span>
-                      <span class="icon-right-arrow text-[10px] gra-text"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-        </li>
-        <li class="py-2">
-          <div class="flex items-center justify-between title_tab">
-            <a href="#" class="text-16 font-medium text-primary">Resources</a>
-            <span class="icon-plus text-14 font-extrabold open"></span>
-          </div>
-          <ul class="bg-white p-4 flex items-center mt-3 rounded-md inner_content">
-            <div class="space-y-2.5 w-full">
-              <div class="w-full">
-                <div class="flex items-center justify-between title_tab_2">
-                  <a href="#" class="text-16 gra-text mb-1">All Resources</a>
-                  <span class="icon-plus text-14 font-extrabold open"></span>
-                </div>
-                <ul class="rounded-md inner_content_2">
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">Blogs</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">FAQs</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">Contact Us</a>
-                  </li>
-                  <li class="py-2">
-                    <a href="#" class="text-14 text-secondary gra_hover font-normal">How it works?</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </ul>
-        </li>
-      </ul>
-      
-    </div>
-    <!-- mobile screen sidebar  -->
     <div class="wrapper relative z-20">
       <div class="flex items-center flex-wrap -mx-5">
         <div class="w-full md:w-1/2 lg:w-[55%] p-5 md:order-2">
@@ -448,7 +219,7 @@
         That Keeps You Going, No Matter the Flow
       </h2>
       <div class="flex flex-wrap justify-center -mx-3.5 mt-8 lg:mt-10 2xl:mt-16">
-        <div class="w-full max-w-[400px] sm:w-max-full sm:w-1/2 md:w-1/3 p-3.5">
+        <div class="w-full sm:w-1/2 md:w-1/3 p-3.5">
           <div class="relative">
             <div class="space-y-2.5 md:space-y-3 xl:space-y-5 absolute w-9/12 lg:w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
               <div class="relative max-w-20 xl:max-w-24 mx-auto">
@@ -463,7 +234,7 @@
             <img src="assets/images/prot_card1.webp" alt="prot_card1"/>
           </div>
         </div>
-        <div class="w-full max-w-[400px] sm:w-max-full sm:w-1/2 md:w-1/3 p-3.5">
+        <div class="w-full sm:w-1/2 md:w-1/3 p-3.5">
           <div class="relative">
             <div class="space-y-2.5 md:space-y-3 xl:space-y-5 absolute w-9/12 lg:w-8/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
               <div class="relative max-w-20 xl:max-w-24 mx-auto">
@@ -478,7 +249,7 @@
             <img src="assets/images/prot_card2.webp" alt="prot_card2"/>
           </div>
         </div>
-        <div class="w-full max-w-[400px] sm:w-max-full sm:w-1/2 md:w-1/3 p-3.5">
+        <div class="w-full sm:w-1/2 md:w-1/3 p-3.5">
           <div class="relative">
             <div class="space-y-2.5 md:space-y-3 xl:space-y-5 absolute w-9/12 lg:w-11/12 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 text-center">
               <div class="relative max-w-20 xl:max-w-24 mx-auto">
@@ -1052,8 +823,5 @@
       <img src="assets/images/footer_bg.webp" class="absolute inset-0 w-full h-full object-cover 2xl:object-contain" alt="footer_bg"/>
     </div>
   </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="assets/js/script.js"></script>
 </body>
 </html>
