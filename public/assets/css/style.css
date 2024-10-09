@@ -2180,6 +2180,14 @@ section{
   padding-top: 1.25rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pb-32{
+  padding-bottom: 8rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -3259,6 +3267,14 @@ section{
 
   .xl\:pt-6{
     padding-top: 1.5rem;
+  }
+
+  .xl\:pb-44{
+    padding-bottom: 11rem;
+  }
+
+  .xl\:pb-32{
+    padding-bottom: 8rem;
   }
 
   .xl\:text-14{
