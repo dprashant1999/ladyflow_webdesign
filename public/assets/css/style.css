@@ -1030,6 +1030,10 @@ section{
   top: -1.75rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-20{
   bottom: 5rem;
 }
@@ -1078,6 +1082,10 @@ section{
   left: 2.5rem;
 }
 
+.left-20{
+  left: 5rem;
+}
+
 .left-3{
   left: 0.75rem;
 }
@@ -1088,6 +1096,14 @@ section{
 
 .left-44{
   left: 11rem;
+}
+
+.left-\[27\%\]{
+  left: 27%;
+}
+
+.left-\[40\%\]{
+  left: 40%;
 }
 
 .right-0{
@@ -1110,6 +1126,10 @@ section{
   right: 5rem;
 }
 
+.right-3{
+  right: 0.75rem;
+}
+
 .right-32{
   right: 8rem;
 }
@@ -1120,6 +1140,10 @@ section{
 
 .right-\[10\%\]{
   right: 10%;
+}
+
+.right-\[2\%\]{
+  right: 2%;
 }
 
 .right-\[7\%\]{
@@ -1150,6 +1174,10 @@ section{
   top: 8rem;
 }
 
+.top-36{
+  top: 9rem;
+}
+
 .top-40{
   top: 10rem;
 }
@@ -1168,6 +1196,10 @@ section{
 
 .top-\[18\%\]{
   top: 18%;
+}
+
+.top-\[19\%\]{
+  top: 19%;
 }
 
 .top-\[20\%\]{
@@ -1210,9 +1242,18 @@ section{
   order: 2;
 }
 
+.order-3{
+  order: 3;
+}
+
 .-mx-2\.5{
   margin-left: -0.625rem;
   margin-right: -0.625rem;
+}
+
+.-mx-3{
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
 }
 
 .-mx-3\.5{
@@ -1353,6 +1394,10 @@ section{
 
 .mt-9{
   margin-top: 2.25rem;
+}
+
+.mt-auto{
+  margin-top: auto;
 }
 
 .line-clamp-2{
@@ -1505,6 +1550,10 @@ section{
   width: 81%;
 }
 
+.w-auto{
+  width: auto;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1544,6 +1593,10 @@ section{
 
 .max-w-32{
   max-width: 8rem;
+}
+
+.max-w-36{
+  max-width: 9rem;
 }
 
 .max-w-3xl{
@@ -1600,6 +1653,14 @@ section{
 
 .max-w-\[541px\]{
   max-width: 541px;
+}
+
+.max-w-\[675px\]{
+  max-width: 675px;
+}
+
+.max-w-\[686px\]{
+  max-width: 686px;
 }
 
 .max-w-lg{
@@ -1683,6 +1744,14 @@ section{
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -1745,6 +1814,12 @@ section{
   margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-0 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
 .space-y-1 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1779,6 +1854,12 @@ section{
   --tw-space-y-reverse: 0;
   margin-top: calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.875rem * var(--tw-space-y-reverse));
+}
+
+.space-y-36 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(9rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(9rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -1981,6 +2062,10 @@ section{
   padding: 5rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .p-3\.5{
   padding: 0.875rem;
 }
@@ -2180,14 +2265,6 @@ section{
   padding-top: 1.25rem;
 }
 
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pb-32{
-  padding-bottom: 8rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -2219,6 +2296,11 @@ section{
 .text-20{
   font-size: 20px;
   line-height: 28px;
+}
+
+.text-22{
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .text-24{
@@ -2313,6 +2395,10 @@ section{
 
 .line-through{
   text-decoration-line: line-through;
+}
+
+.opacity-20{
+  opacity: 0.2;
 }
 
 .shadow{
@@ -2480,6 +2566,14 @@ section{
     top: -2.5rem;
   }
 
+  .md\:bottom-12{
+    bottom: 3rem;
+  }
+
+  .md\:top-28{
+    top: 7rem;
+  }
+
   .md\:order-1{
     order: 1;
   }
@@ -2540,6 +2634,10 @@ section{
     display: none;
   }
 
+  .md\:min-h-screen{
+    min-height: 100vh;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2592,6 +2690,10 @@ section{
     width: calc(100% - 460px);
   }
 
+  .md\:w-auto{
+    width: auto;
+  }
+
   .md\:max-w-16{
     max-width: 4rem;
   }
@@ -2608,12 +2710,26 @@ section{
     max-width: 10rem;
   }
 
+  .md\:max-w-52{
+    max-width: 13rem;
+  }
+
+  .md\:max-w-\[441px\]{
+    max-width: 441px;
+  }
+
   .md\:max-w-full{
     max-width: 100%;
   }
 
   .md\:max-w-sm{
     max-width: 24rem;
+  }
+
+  .md\:-space-y-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(-2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(-2.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:-space-y-12 > :not([hidden]) ~ :not([hidden]){
@@ -2682,6 +2798,10 @@ section{
   .md\:pr-10{
     padding-right: 2.5rem;
   }
+
+  .md\:opacity-100{
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1024px){
@@ -2699,6 +2819,18 @@ section{
 
   .lg\:right-0{
     right: 0px;
+  }
+
+  .lg\:order-1{
+    order: 1;
+  }
+
+  .lg\:order-2{
+    order: 2;
+  }
+
+  .lg\:order-3{
+    order: 3;
   }
 
   .lg\:-mx-5{
@@ -2854,8 +2986,16 @@ section{
     max-width: 12rem;
   }
 
+  .lg\:max-w-64{
+    max-width: 16rem;
+  }
+
   .lg\:max-w-full{
     max-width: 100%;
+  }
+
+  .lg\:max-w-lg{
+    max-width: 32rem;
   }
 
   .lg\:max-w-max{
@@ -3049,6 +3189,16 @@ section{
     line-height: 24px;
   }
 
+  .lg\:text-18{
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .lg\:text-24{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .lg\:text-40{
     font-size: 40px;
     line-height: 52px;
@@ -3089,6 +3239,10 @@ section{
     top: -6rem;
   }
 
+  .xl\:-mt-32{
+    margin-top: -8rem;
+  }
+
   .xl\:ml-3{
     margin-left: 0.75rem;
   }
@@ -3115,6 +3269,10 @@ section{
 
   .xl\:h-\[60px\]{
     height: 60px;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
   }
 
   .xl\:w-1\/6{
@@ -3172,6 +3330,12 @@ section{
   .xl\:-translate-y-10{
     --tw-translate-y: -2.5rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .xl\:-space-y-24 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(-6rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(-6rem * var(--tw-space-y-reverse));
   }
 
   .xl\:-space-y-80 > :not([hidden]) ~ :not([hidden]){
@@ -3249,6 +3413,10 @@ section{
     padding-bottom: 6rem;
   }
 
+  .xl\:pb-32{
+    padding-bottom: 8rem;
+  }
+
   .xl\:pb-6{
     padding-bottom: 1.5rem;
   }
@@ -3269,14 +3437,6 @@ section{
     padding-top: 1.5rem;
   }
 
-  .xl\:pb-44{
-    padding-bottom: 11rem;
-  }
-
-  .xl\:pb-32{
-    padding-bottom: 8rem;
-  }
-
   .xl\:text-14{
     font-size: 14px;
     line-height: 22px;
@@ -3290,6 +3450,11 @@ section{
   .xl\:text-18{
     font-size: 18px;
     line-height: 26px;
+  }
+
+  .xl\:text-28{
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .group:hover .xl\:group-hover\:-translate-y-16{
@@ -3335,6 +3500,10 @@ section{
     top: -20rem;
   }
 
+  .\32xl\:bottom-16{
+    bottom: 4rem;
+  }
+
   .\32xl\:bottom-24{
     bottom: 6rem;
   }
@@ -3347,12 +3516,20 @@ section{
     left: 3.5rem;
   }
 
+  .\32xl\:right-14{
+    right: 3.5rem;
+  }
+
   .\32xl\:right-\[11\%\]{
     right: 11%;
   }
 
   .\32xl\:top-20{
     top: 5rem;
+  }
+
+  .\32xl\:top-36{
+    top: 9rem;
   }
 
   .\32xl\:top-\[20\%\]{
@@ -3500,6 +3677,12 @@ section{
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .\32xl\:space-x-7 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .\32xl\:space-x-9 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(2.25rem * var(--tw-space-x-reverse));
@@ -3522,6 +3705,12 @@ section{
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .\32xl\:space-y-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .\32xl\:space-y-9 > :not([hidden]) ~ :not([hidden]){
@@ -3553,6 +3742,11 @@ section{
   .\32xl\:py-24{
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .\32xl\:py-36{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
 
   .\32xl\:py-7{
@@ -3614,6 +3808,11 @@ section{
   .\32xl\:text-24{
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .\32xl\:text-32{
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .\32xl\:text-50{
