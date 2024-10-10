@@ -17,6 +17,10 @@ section{@apply relative;}
 .gra_hover{@apply hover:bg-primary_gra hover:bg-clip-text hover:text-transparent;}
 .gra_ghover{@apply group-hover:bg-primary_gra group-hover:bg-clip-text group-hover:text-transparent;}
 .input_box{@apply w-full py-3 sm:py-4 md:py-5 lg:py-6 2xl:py-7 px-4 md:px-5 lg:px-6 2xl:px-[30px] bg-white outline-none rounded-full text-secondary text-14 lg:text-16 2xl:text-18 font-light;}
+
+.card_social{@apply p-2 w-8 h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 flex items-center justify-center rounded-full bg-white;}
+
+#drop_list.droplist_open{@apply visible translate-y-2;}
 .title_tab.active span .close {
   display: block;
 }
