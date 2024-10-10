@@ -1174,10 +1174,6 @@ section{
   right: 1.25rem;
 }
 
-.right-\[10\%\]{
-  right: 10%;
-}
-
 .right-\[2\%\]{
   right: 2%;
 }
@@ -1192,6 +1188,10 @@ section{
 
 .top-10{
   top: 2.5rem;
+}
+
+.top-16{
+  top: 4rem;
 }
 
 .top-2{
@@ -1236,10 +1236,6 @@ section{
 
 .top-full{
   top: 100%;
-}
-
-.top-16{
-  top: 4rem;
 }
 
 .-z-0{
@@ -1683,6 +1679,10 @@ section{
   max-width: 1386px;
 }
 
+.max-w-\[198px\]{
+  max-width: 198px;
+}
+
 .max-w-\[350px\]{
   max-width: 350px;
 }
@@ -1721,10 +1721,6 @@ section{
 
 .max-w-xl{
   max-width: 36rem;
-}
-
-.max-w-\[198px\]{
-  max-width: 198px;
 }
 
 .grow{
@@ -1944,18 +1940,6 @@ section{
   --tw-space-y-reverse: 0;
   margin-top: calc(30px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(30px * var(--tw-space-y-reverse));
-}
-
-.space-x-9 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -2390,11 +2374,6 @@ section{
   line-height: 1.25rem;
 }
 
-.text-50{
-  font-size: 50px;
-  line-height: 61px;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -2434,6 +2413,11 @@ section{
   color: rgb(0 17 74 / var(--tw-text-opacity));
 }
 
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .text-secondary{
   --tw-text-opacity: 1;
   color: rgb(54 86 119 / var(--tw-text-opacity));
@@ -2450,21 +2434,6 @@ section{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-950{
-  --tw-text-opacity: 1;
-  color: rgb(69 10 10 / var(--tw-text-opacity));
-}
-
-.text-red-500{
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-red-600{
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3492,10 +3461,6 @@ section{
     top: -6rem;
   }
 
-  .xl\:right-\[15\%\]{
-    right: 15%;
-  }
-
   .xl\:-mt-32{
     margin-top: -8rem;
   }
@@ -3821,10 +3786,6 @@ section{
 
   .\32xl\:right-\[11\%\]{
     right: 11%;
-  }
-
-  .\32xl\:right-\[19\%\]{
-    right: 19%;
   }
 
   .\32xl\:top-20{
