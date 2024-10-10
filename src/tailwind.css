@@ -39,6 +39,7 @@ section{@apply relative;}
   animation: flower_l 3s infinite alternate ease-in-out;
 }
 
+
 .input_radio {
   appearance: none;
   border-radius: 50%;
