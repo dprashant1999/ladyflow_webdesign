@@ -274,7 +274,7 @@
       </div>
     </header>
     <!-- mobile screen sidebar  -->
-    <div class="w-full h-screen bg-black/30 backdrop-blur-sm fixed inset-0 z-50 anim" id="add">
+    <div class="w-full h-screen bg-black/30 backdrop-blur-sm fixed inset-0 z-50 anim hidden" id="add">
       <ul class="w-full h-screen max-w-96 p-5 bg-[#FFDEEC] overflow-y-auto">
         <li class="flex items-center justify-between border-b-2 pb-3 mb-2.5 border-[#EC008C]">
           <a href="#">
@@ -653,7 +653,7 @@
             <img src="assets/images/flower_laft.webp" class="flo_left block absolute -right-6 -bottom-6 max-w-40 2xl:max-w-60 z-10" alt="flower_left"/>
           </div>
         </div>
-        <div class="w-full md:w-1/2 lg:w-7/12 p-5">
+        <div class="w-full md:w-1/2 lg:w-8/12 p-5">
           <div class="pl-2 lg:pl-20">
             <h2>
               <span class="relative px-1 sm:px-2 rounded-full bg-[#FFDEEC] mr-2 md:mr-4">
@@ -673,7 +673,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </8iv>
       </div>
     </div>
     <img src="assets/images/dflow_lf.webp" class="absolute hidden lg:block -top-20 xl:-top-24 2xl:-top-52 left-0 max-w-60 xl:max-w-80 2xl:max-w-full" alt="flow_group"/>
@@ -1194,7 +1194,242 @@
       <img src="assets/images/footer_bg.webp" class="absolute inset-0 w-full h-full object-cover 2xl:object-contain" alt="footer_bg"/>
     </div>
   </footer>
+  <!-- Login form  -->
+  <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex">
+    <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
+        <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
+          <div class="flex items-center justify-end">
+            <div class="mx-auto">
+              <h3 class="text-center">Login</h3>
+            </div>
+            <span>
+              <svg class="h-5 lg:h-7 2xl:h-8 w-5 lg:w-7 2xl:w-8" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 32 32" fill="none">
+                <g clip-path="url(#clip0_1654_19446)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7196 0.61102C14.1927 -0.203673 17.8073 -0.203674 21.2805 0.61102C26.2962 1.78754 30.2125 5.70385 31.389 10.7196C32.2037 14.1927 32.2037 17.8073 31.389 21.2804C30.2125 26.2962 26.2962 30.2125 21.2804 31.389C17.8073 32.2037 14.1927 32.2037 10.7196 31.389C5.70385 30.2125 1.78755 26.2962 0.611022 21.2805C-0.203674 17.8073 -0.203674 14.1927 0.611022 10.7195C1.78755 5.70384 5.70385 1.78754 10.7196 0.61102ZM13.7135 12.2695C13.3148 11.8707 12.6682 11.8707 12.2695 12.2695C11.8707 12.6682 11.8707 13.3148 12.2695 13.7135L14.5559 16L12.2695 18.2864C11.8707 18.6852 11.8707 19.3317 12.2695 19.7305C12.6682 20.1292 13.3148 20.1292 13.7135 19.7305L16 17.444L18.2864 19.7305C18.6852 20.1292 19.3317 20.1292 19.7305 19.7305C20.1292 19.3317 20.1292 18.6852 19.7305 18.2864L17.444 16L19.7305 13.7135C20.1292 13.3148 20.1292 12.6682 19.7305 12.2695C19.3317 11.8707 18.6852 11.8707 18.2864 12.2695L16 14.5559L13.7135 12.2695Z" fill="url(#paint0_linear_1654_19446)"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_1654_19446" x1="0" y1="16" x2="32" y2="16" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EC008C"/>
+                <stop offset="1" stop-color="#FC6767"/>
+                </linearGradient>
+                <clipPath id="clip0_1654_19446">
+                <rect width="32" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </div>
+            <p class="text-secondary font-light text18 max-w-[360px] mx-auto text-center mt-2.5 lg:mt-3.5 2xl:mt-5">Get access to your Orders, Wishlist and Recommendations</p>
+            <div class="mt-5 lg:mt-7 2xl:mt-9 space-y-2.5 lg:space-y-3.5 2xl:space-y-5">
+              <form class="text-center">
+                <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Mobile Number">
+              </form>
+              <p class="text-secondary text-14 2xl:text-16 font-light max-w-[423px] text-center mx-auto">By continuing, you agree to Ladyflowz's <span class="text-primary underline">Terms of Use</span> 
+                and <span class="text-primary underline"> Privacy Policy</span>.</p>
+            </div>
+            <div class="mt-8 lg:mt-10 2xl:mt-12 text-center">
+              <a href="#" class="relative w-max inline-block btn">
+                <img src="assets/images/btn_primary.svg" class="max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-full" alt="btn_primary">
+                <span class=" text-white">Request OTP</span>
+              </a>
+              <span class="text-primary text-14 2xl:text-16 font-medium block mt-2.5 lg:mt-4 2xl:mt-6">New to Ladyflowz? <a href="#" class="gra-text inline-block">Create an account</a></span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Login form  -->
+  <!-- Sign up form  -->
+  <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex">
+    <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
+        <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
+          <div class="flex items-center justify-end">
+            <div class="mx-auto">
+              <h3 class="text-center">Sign Up</h3>
+            </div>
+            <span>
+              <svg class="h-5 lg:h-7 2xl:h-8 w-5 lg:w-7 2xl:w-8" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 32 32" fill="none">
+                <g clip-path="url(#clip0_1654_19446)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7196 0.61102C14.1927 -0.203673 17.8073 -0.203674 21.2805 0.61102C26.2962 1.78754 30.2125 5.70385 31.389 10.7196C32.2037 14.1927 32.2037 17.8073 31.389 21.2804C30.2125 26.2962 26.2962 30.2125 21.2804 31.389C17.8073 32.2037 14.1927 32.2037 10.7196 31.389C5.70385 30.2125 1.78755 26.2962 0.611022 21.2805C-0.203674 17.8073 -0.203674 14.1927 0.611022 10.7195C1.78755 5.70384 5.70385 1.78754 10.7196 0.61102ZM13.7135 12.2695C13.3148 11.8707 12.6682 11.8707 12.2695 12.2695C11.8707 12.6682 11.8707 13.3148 12.2695 13.7135L14.5559 16L12.2695 18.2864C11.8707 18.6852 11.8707 19.3317 12.2695 19.7305C12.6682 20.1292 13.3148 20.1292 13.7135 19.7305L16 17.444L18.2864 19.7305C18.6852 20.1292 19.3317 20.1292 19.7305 19.7305C20.1292 19.3317 20.1292 18.6852 19.7305 18.2864L17.444 16L19.7305 13.7135C20.1292 13.3148 20.1292 12.6682 19.7305 12.2695C19.3317 11.8707 18.6852 11.8707 18.2864 12.2695L16 14.5559L13.7135 12.2695Z" fill="url(#paint0_linear_1654_19446)"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_1654_19446" x1="0" y1="16" x2="32" y2="16" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EC008C"/>
+                <stop offset="1" stop-color="#FC6767"/>
+                </linearGradient>
+                <clipPath id="clip0_1654_19446">
+                <rect width="32" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </div>
+            <p class="text-secondary font-light text18 max-w-[360px] mx-auto text-center mt-2.5 lg:mt-3.5 2xl:mt-5">Please fill details to Sign Up</p>
+            <div class="mt-5 lg:mt-7 2xl:mt-9 space-y-2.5 lg:space-y-3.5 2xl:space-y-5 max-w-[500px] mx-auto">
+              <form class="text-center space-y-3 lg:space-y-4 2xl:space-y-6">
+                <div class="w-20 h-20 bg-b4 rounded-full flex items-center justify-center mx-auto relative">
+                  <span class="icon-user text-b2 text-18"></span>
+                  <div class="w-9 h-9 bg-b4 rounded-full flex items-center justify-center border-2 border-white absolute -bottom-2 -right-2">
+                    <span class="icon-img text-14 text-b2"></span>
+                  </div>
+                </div>
+                <div class="space-y-2.5 lg:space-y-4 2xl:space-y-5">
+                  <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Full Name">
+                  <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Email">
+                  <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Mobile Number">
+                </div>
+                <div class="text-left">
+                  <span class="text-primary text-14 2xl:text-16 font-medium block mb-2.5 2xl:mb-3">Gender</span>
+                  <div class="flex items-center space-x-3 lg:space-x-6 2xl:space-x-8">
+                    <div class="flex space-x-2">
+                      <input type="radio" name="gender" id="gender1" class="input_radio_popup"/>
+                      <label for="gender1" class="text-14 text-secondary font-medium ">Male</label>
+                    </div>
+                    <div class="flex space-x-2">
+                      <input type="radio" name="gender" id="gender2" class="input_radio_popup"/>
+                      <label for="gender2" class="text-14 text-secondary font-medium ">Female</label>
+                    </div>
+                    <div class="flex space-x-2">
+                      <input type="radio" name="gender" id="gender3" class="input_radio_popup"/>
+                      <label for="gender3" class="text-14 text-secondary font-medium ">Others</label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="mt-8 lg:mt-10 2xl:mt-12 text-center">
+              <a href="#" class="relative w-max inline-block btn">
+                <img src="assets/images/btn_primary.svg" class="max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-full" alt="btn_primary">
+                <span class=" text-white">Sign UP</span>
+              </a>
+              <span class="block text-secondary text-14 font-medium mt-2">Or</span>
+              <div class="flex flex-wrap items-center space-y-3 md:space-y-0 md:space-x-3 space-x-0 justify-center mt-2.5 lg:mt-3 2xl:mt-4">
+                <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
+                  <img src="assets/images/google_logo.svg" alt="google_logo"/>
+                 <span class="text-12 text-secondary font-medium"> Sign Up With Google</span>
+                </button>
+                <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
+                  <img src="assets/images/facebook.svg" alt="facebook"/>
+                 <span class="text-12 text-secondary font-medium"> Sign Up With Facebook</span>
+                </button>
+                <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
+                  <img src="assets/images/apple.svg" alt="apple"/>
+                 <span class="text-12 text-secondary font-medium"> Sign Up With Apple</span>
+                </button>
+              </div>
+              <span class="text-primary text-14 2xl:text-16 font-medium block mt-2.5 lg:mt-4 2xl:mt-6">Already have an account?  <a href="#" class="gra-text inline-block underline">Login</a></span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Sign up form  -->
+  <!-- Login OTP Verification  -->
+  <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex">
+    <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
+        <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
+          <div class="flex items-center justify-end">
+            <div class="mx-auto">
+              <h3 class="text-center">OTP</h3>
+            </div>
+            <span>
+              <svg class="h-5 lg:h-7 2xl:h-8 w-5 lg:w-7 2xl:w-8" xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 32 32" fill="none">
+                <g clip-path="url(#clip0_1654_19446)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7196 0.61102C14.1927 -0.203673 17.8073 -0.203674 21.2805 0.61102C26.2962 1.78754 30.2125 5.70385 31.389 10.7196C32.2037 14.1927 32.2037 17.8073 31.389 21.2804C30.2125 26.2962 26.2962 30.2125 21.2804 31.389C17.8073 32.2037 14.1927 32.2037 10.7196 31.389C5.70385 30.2125 1.78755 26.2962 0.611022 21.2805C-0.203674 17.8073 -0.203674 14.1927 0.611022 10.7195C1.78755 5.70384 5.70385 1.78754 10.7196 0.61102ZM13.7135 12.2695C13.3148 11.8707 12.6682 11.8707 12.2695 12.2695C11.8707 12.6682 11.8707 13.3148 12.2695 13.7135L14.5559 16L12.2695 18.2864C11.8707 18.6852 11.8707 19.3317 12.2695 19.7305C12.6682 20.1292 13.3148 20.1292 13.7135 19.7305L16 17.444L18.2864 19.7305C18.6852 20.1292 19.3317 20.1292 19.7305 19.7305C20.1292 19.3317 20.1292 18.6852 19.7305 18.2864L17.444 16L19.7305 13.7135C20.1292 13.3148 20.1292 12.6682 19.7305 12.2695C19.3317 11.8707 18.6852 11.8707 18.2864 12.2695L16 14.5559L13.7135 12.2695Z" fill="url(#paint0_linear_1654_19446)"/>
+                </g>
+                <defs>
+                <linearGradient id="paint0_linear_1654_19446" x1="0" y1="16" x2="32" y2="16" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EC008C"/>
+                <stop offset="1" stop-color="#FC6767"/>
+                </linearGradient>
+                <clipPath id="clip0_1654_19446">
+                <rect width="32" height="32" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </span>
+          </div>
+          <div class="max-w-[360px] mx-auto text-center">
+            <p class="text-secondary font-light text18 text-center mt-2.5 lg:mt-3.5 2xl:mt-5">Please enter the OTP sent to
+            </p>
+            <h4>+91 9876543242 <br class="sm:hidden block"> <span class="gra-text text18 font-light underline">Change Number</span></h4>
+          </div>
+            <div class="mt-5 lg:mt-7 2xl:mt-9 space-y-2.5 lg:space-y-3.5 2xl:space-y-5">
+              <form class="text-center flex items-center space-x-2 lg:space-x-3 2xl:space-x-4 justify-center otp-field">
+                <input type="text" class="w-9 lg:w-11 2xl:w-14 h-9 lg:h-11 2xl:h-14 bg-b4 rounded-full outline-none text-center text-12 lg:text-14 2xl:text-16" placeholder="-" maxlength="1">
+                <input type="text" class="w-9 lg:w-11 2xl:w-14 h-9 lg:h-11 2xl:h-14 bg-b4 rounded-full outline-none text-center text-12 lg:text-14 2xl:text-16" placeholder="-" maxlength="1">
+                <input type="text" class="w-9 lg:w-11 2xl:w-14 h-9 lg:h-11 2xl:h-14 bg-b4 rounded-full outline-none text-center text-12 lg:text-14 2xl:text-16" placeholder="-" maxlength="1">
+                <input type="text" class="w-9 lg:w-11 2xl:w-14 h-9 lg:h-11 2xl:h-14 bg-b4 rounded-full outline-none text-center text-12 lg:text-14 2xl:text-16" placeholder="-" maxlength="1">
+                <input type="text" class="w-9 lg:w-11 2xl:w-14 h-9 lg:h-11 2xl:h-14 bg-b4 rounded-full outline-none text-center text-12 lg:text-14 2xl:text-16" placeholder="-" maxlength="1">
+                <input type="text" class="w-9 lg:w-11 2xl:w-14 h-9 lg:h-11 2xl:h-14 bg-b4 rounded-full outline-none text-center text-12 lg:text-14 2xl:text-16" placeholder="-" maxlength="1">
+              </form>
+              <p class="text-secondary text-14 2xl:text-16 font-light max-w-[423px] text-center mx-auto">Not Receive code? <span class="gra-text font-medium underline">Resend Again</span> 
+                </p>
+            </div>
+            <div class="mt-8 lg:mt-10 2xl:mt-12 text-center">
+              <a href="#" class="relative w-max inline-block btn">
+                <img src="assets/images/btn_primary.svg" class="max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-full" alt="btn_primary">
+                <span class=" text-white">Verify</span>
+              </a>
+              <span class="text-primary text-14 2xl:text-16 font-medium block mt-2.5 lg:mt-4 2xl:mt-6"><span class="icon-left_arrow gra-text"></span>  Back to <a href="#" class="gra-text inline-block">Login</a></span>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Login OTP Verification  -->
 
+
+
+  <script>
+    const inputs = document.querySelectorAll(".otp-field input");
+
+inputs.forEach((input, index) => {
+    input.dataset.index = index;
+    input.addEventListener("keyup", handleOtp);
+    input.addEventListener("paste", handleOnPasteOtp);
+});
+
+function handleOtp(e) {
+    const input = e.target;
+    let value = input.value;
+    let isValidInput = value.match(/[0-9a-z]/gi);
+    input.value = "";
+    input.value = isValidInput ? value[0] : "";
+
+    let fieldIndex = input.dataset.index;
+    if (fieldIndex < inputs.length - 1 && isValidInput) {
+        input.nextElementSibling.focus();
+    }
+
+    if (e.key === "Backspace" && fieldIndex > 0) {
+        input.previousElementSibling.focus();
+    }
+
+    if (fieldIndex == inputs.length - 1 && isValidInput) {
+        submit();
+    }
+}
+
+function handleOnPasteOtp(e) {
+    const data = e.clipboardData.getData("text");
+    const value = data.split("");
+    if (value.length === inputs.length) {
+        inputs.forEach((input, index) => (input.value = value[index]));
+        submit();
+    }
+}
+
+function submit() {
+    console.log("Submitting...");
+    // 👇 Entered OTP
+    let otp = "";
+    inputs.forEach((input) => {
+        otp += input.value;
+        input.disabled = true;
+        input.classList.add("disabled");
+    });
+    console.log(otp);
+    // 👉 Call API below
+}
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>

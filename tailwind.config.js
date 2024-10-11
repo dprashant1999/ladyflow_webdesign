@@ -10,6 +10,8 @@ module.exports = {
         'primary':'#00114A',
         'secondary':'#365677',
         'b1':'#BCCAD9',
+        'b2':'#BCCAD9',
+        'b4':'#F0F3F7',
       },
       backgroundImage: {
         'primary_gra': 'linear-gradient(90deg, #EC008C 0%, #FC6767 100%)',

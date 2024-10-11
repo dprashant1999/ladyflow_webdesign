@@ -52,7 +52,22 @@ section{@apply relative;}
   position: relative;
   top: 4px;
 }
+.input_radio_popup {
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #CBD4E1;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
 
+.input_radio_popup:checked {
+  border: 4px solid #EC008C;
+  
+}
 .input_radio:checked {
   border: 6px solid #EC008C;
   
