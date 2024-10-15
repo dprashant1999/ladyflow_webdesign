@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Saved Address</title>
+    <title>Favorites</title>
     <link rel="stylesheet" href="assets/css/icomoon.css"/>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.webp"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
-
 <body>
     <section class="relative">
         <header class="relative z-50 py-5">
@@ -419,166 +418,219 @@
         </div>
         <!-- mobile screen sidebar  -->
         <img src="assets/images/flower_laft.webp" class="flo_left hidden md:block absolute left-10 top-10 max-w-40 2xl:max-w-60 z-10" alt="flower_left"/>
-        <img src="assets/images/flower_right.webp" class="flo_left hidden md:block absolute right-10 top-52 max-w-40 2xl:max-w-60 z-10" alt="flower_left"/>
     </section>
     <section>
-        <div class="wrapper relative z-10 pt-12 lg:pt-14 xl:pt-16 2xl:pt-20 pb-12 lg:pb-16 xl:pb-20 2xl:pb-24">
-            <div class="pb-10 lg:pb-14 xl:pb-16 2xl:pb-20">
-            <h2>
-                <span class="relative px-1 sm:px-4 rounded-full bg-[#FFDEEC]">
-                  <img src="assets/images/ag_rt.webp" class="absolute -right-7 -top-7 md:-right-10 md:-top-10 xl:-right-12 xl:-top-12 max-w-12 md:max-w-16 xl:max-w-full" alt="ag_tr"/>
-                  <span class="gra-text inline-block pr-2 sm:translate-x-1">Checkout</span>
-                </span>
+        <div class="wrapper relative z-10 space-y-6 xl:space-y-10 2xl:space-y-16 primary_paddingg">
+            <h2 class="pb-5 lg:pb-7 2xl:pb-9 border-b border-b2">
+                <div class="inline-block relative px-1 pl-2 sm:px-4 rounded-full bg-[#FFDEEC]">
+                  <img src="assets/images/ag_rt.webp" class="absolute -right-7 -top-7 md:-right-10 md:-top-10 xl:-right-12 xl:-top-12 max-w-12 md:max-w-16 xl:max-w-full" alt="ag_tr">
+                  <span class="gra-text inline-block pr-2 sm:translate-x-1"> Account</span>
+                </div>
             </h2>
-            </div>
-            <div class="w-full flex lg:flex-nowrap justify-center flex-wrap">
-                <div class="w-full lg:w-[calc(100%-460px)]">
-                    <div class="w-full pb-9 border-b border-[#BCCAD9] space-y-5">
-                        <h3>Delivery Address</h3>
-                        <div class="bg-white px-5 py-3.5 xl:px-7 xl:py-5 rounded-lg lg:rounded-2xl xl:rounded-[36px]">
-                            <div class="flex items-start justify-between">
-                                <div class="flex space-x-4">
-                                    <div>
-                                        <input type="radio" id="address" name="address" class="input_radio"/>
-                                        <label for="address" class="text-14 sm:text-16 xl:text-20 text-primary font-semibold">1st Flor, Sitaram Soc, Puna To Bombay Market Road, Surat, gujrat 395010</label>
-                                    </div>
+            <div class="flex lg:flex-nowrap justify-center flex-wrap">
+                <div class="w-[426px] lg:px-2.5 py-2.5 lg:mr-5 mt-2.5 lg:mt-0">
+                    <div class="relative px-5 lg:px-7 2xl:px-9 py-10 lg:py-14 2xl:py-20">
+                        <div class="relative z-10 space-y-2.5 lg:space-y-3.5 2xl:space-y-4">
+                            <div class="border-b pb-2.5 lg:pb-3.5 2xl:pb-4 border-b2 group">
+                                <div class="flex items-center space-x-4 py-3 px-5 group-hover:bg-[#FFF3F8] group-hover:rounded-full anim">
+                                    <span class="icon-user text-18 lg:text-20 2xl:text-24 gra_ghover"></span>
+                                    <h4 class="gra_ghover">My Account</h4>
                                 </div>
-                                <a class="gra-text underline text-16 font-medium">Edit</a>
+                            </div>
+                            <div class="border-b pb-2.5 lg:pb-3.5 2xl:pb-4 border-b2 group">
+                                <div class="flex items-center space-x-4 py-3 px-5 group-hover:bg-[#FFF3F8] group-hover:rounded-full anim">
+                                    <span class="icon-order text-18 lg:text-20 2xl:text-24 gra_ghover"></span>
+                                    <h4 class="gra_ghover">My Orders</h4>
+                                </div>
+                            </div>
+                            <div class="border-b pb-2.5 lg:pb-3.5 2xl:pb-4 border-b2 group">
+                                <div class="flex items-center space-x-4 py-3 px-5 group-hover:bg-[#FFF3F8] group-hover:rounded-full anim">
+                                    <span class="icon-like text-18 lg:text-20 2xl:text-24 gra_ghover"></span>
+                                    <h4 class="gra_ghover">Favorites</h4>
+                                </div>
+                            </div>
+                            <div class="border-b pb-2.5 lg:pb-3.5 2xl:pb-4 border-b2 group">
+                                <div class="flex items-center space-x-4 py-3 px-5 group-hover:bg-[#FFF3F8] group-hover:rounded-full anim">
+                                    <span class="icon-user text-18 lg:text-20 2xl:text-24 gra_ghover"></span>
+                                    <h4 class="text-nowrap gra_ghover">Manage Addresses</h4>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="flex items-center space-x-4 py-3 px-5 group-hover:bg-[#FFF3F8] group-hover:rounded-full anim">
+                                    <span class="icon-logout text-18 lg:text-20 2xl:text-24 gra_ghover"></span>
+                                    <h4 class="gra_ghover">Logout</h4>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-white px-5 py-3.5 xl:px-7 xl:py-5 rounded-lg lg:rounded-2xl xl:rounded-[36px]">
-                            <div class="flex items-start justify-between">
-                                <div class="flex space-x-4">
-                                    <div>
-                                        <input type="radio" id="address1" name="address" class="input_radio"/>
-                                        <label for="address1" class="text-14 sm:text-16 xl:text-20 text-primary font-semibold">1st Flor, Sitaram Soc, Puna To Bombay Market Road, Surat, gujrat 395010</label>
-                                    </div>
-                                </div>
-                                <a class="gra-text underline text-16 font-medium">Edit</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <span class="text-16 gra-text border-b">Use This Address</span>
-                            <span class="text-16 gra-text border-b">Add New Address</span>
-                        </div>
+                        <img src="assets/images/bg_account.webp" alt="bg_account" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full"/>
                     </div>
-                    <div class="w-full space-y-5">
-                        <div class="mt-5 xl:mt-9">
-                            <h3>Item</h3>
-                        </div>
-                        <div class="pb-7 border-b border-b1">
-                            <div class="relative w-full max-w-[375px] sm:max-w-full flex flex-wrap sm:flex-nowrap items-center sm:space-y-0 sm:space-x-5 xl:space-x-7 p-5 bg-white rounded-2xl sm:bg-transparent sm:rounded-none sm:p-0">
-                                <div class="w-full sm:w-auto">
-                                  <div class="mx-auto w-40 lg:w-48 xl:w-64 2xl:w-[338px] p-5 flex justify-center items-center bg-white rounded-2xl">
-                                    <img src="assets/images/image 4.png" alt="product">
-                                  </div>
-                                </div>
-                                <div class="flex items-center w-full">
-                                    <div class="w-full space-y-4">
-                                        <div class="space-y-1.5 sm:space-y-3">
-                                            <h3>Pads with wings</h3>
-                                            <div class="flex items-center space-x-4">
-                                                <h3 class="text-secondary">₹1000</h3>                
-                                                <span class="inline-block text-secondary/50 line-through text-16 lg:text-18 xl:text-xl">₹9999</span>
-                                            </div>
+                </div>
+                <div class="w-full lg:w-[calc(100%-426px)] space-y-6 xl:space-y-10 2xl:space-y-16">
+                    <div class="space-y-5 lg:space-y-7 2xl:space-y-9">
+                        <!-- <div class="flex flex-wrap items-center justify-between">
+                          <h3>Favorites</h3>
+                          <div class="flex items-center space-x-3 lg:space-x-4 2xl:space-x-5">
+                              <div>
+                                <span class="icon-search"></span>
+                                <input type="search" class="px-4 2xl:px-5 py-2.5 2xl:py-3 rounded-full bg-white outline-none" placeholder="Search Order"/>
+                              </div>
+                              <div>
+                                <span class="icon-filter text-primary"></span>
+                               <span class="px-4 2xl:px-5 py-2.5 2xl:py-3 rounded-full bg-white outline-none" placeholder="Search Order">Filter</span>
+                               </div>
+                          </div>
+                        </div> -->
+                        <div class="w-full bg-white rounded-[36px] px-4 lg:px-5 2xl:px-7 py-4 lg:py-5 2xl:py-7">
+                            <div>
+                                <div class="relative w-full max-w-[375px] sm:max-w-full flex flex-wrap sm:flex-nowrap items-center space-y-3 sm:space-y-0 sm:space-x-5 xl:space-x-7 p-5 bg-white rounded-2xl sm:bg-transparent sm:rounded-none sm:p-0">
+                                    <div class="w-full sm:w-auto">
+                                        <div class="mx-auto w-40 lg:w-48 xl:w-64 2xl:w-[200px] px-11 py-7 flex justify-center items-center bg-b4 rounded-2xl">
+                                        <img src="assets/images/image 4.png" alt="product"/>
                                         </div>
-                                        <div class="flex flex-wrap items-center space-x-5 lg:space-x-7 2xl:space-x-9">
-                                            <div>
-                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Size</h4>
-                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5">
-                                                    <button class="px-4 py-2 sm:px-5 sm:py-2.5 text-primary text-14 bg-gray-100 sm:bg-white rounded-full font-medium">Regular</button>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Quantity</h4>
-                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5 w-full">
-                                                    <div class="bg-gray-100 sm:bg-white rounded-full px-4 py-2 sm:px-5 sm:py-2.5 space-x-2 sm:space-x-4 lg:space-x-6 xl:space-x-10">
-                                                        <span class="icon-plus text-14"></span>
-                                                        <span class="text-secondary text-14">20</span>
-                                                        <span class="icon-plus text-14"></span>
+                                    </div>
+                                    <div class="flex items-center w-full">
+                                        <div class="w-full space-y-4">
+                                            <div class="flex items-center w-full">
+                                                <div class="w-full space-y-4">
+                                                    <h3>Pads with wings</h3>
+                                                    <div class="flex items-center">
+                                                        <div class="space-y-1.5 sm:space-y-3 pr-3 lg:pr-5 2xl:pr-7">
+                                                            <div class="flex items-center space-x-4">
+                                                                <h3 class="text-secondary">₹1000</h3>                
+                                                                <span class="inline-block text-secondary/50 line-through text-16 lg:text-18 xl:text-xl">₹9999</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-wrap items-center space-x-0 2xl:space-x-9 pl-3 lg:pl-5 2xl:pl-7 border-l border-b4">
+                                                            <div class="mr-2.5">
+                                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Size</h4>
+                                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5">
+                                                                    <span class="text-primary text-14 bg-white rounded-full font-medium">Regular</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Quantity</h4>
+                                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5 w-full">
+                                                                    <div class="bg-white rounded-full space-x-2 sm:space-x-4 lg:space-x-6 xl:space-x-10">
+                                                                        <span class="text-primary text-14">20</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="ml-auto absolute top-5 right-5 sm:relative">
-                                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 sm:bg-white rounded-full flex items-center justify-center p-2 cursor-pointer">
-                                            <span class="icon-delete gra-text"></span>
+                                        <div class="ml-auto absolute top-5 right-5 sm:relative">
+                                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-b4 rounded-full flex items-center justify-center p-2 cursor-pointer">
+                                                <span class="icon-delete gra-text"></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
                         </div>
-                    </div>
-                    <div class="w-full">
-                        <div class="mt-3 lg:mt-7 2xl:mt-9 space-y-5">
-                            <h3 class="mb-9">Payment Method</h3>
-                            <label for="bank" class="w-full flex items-center space-x-3  bg-white py-3.5 px-5 xl:py-5 xl:px-7 rounded-xl lg:rounded-2xl xl:rounded-[36px]">
-                                <div>
-                                    <input type="radio" name="bank" id="bank" class="input_radio">
-                                </div>
-                                <span class="block text-16 lg:text-18 2xl:text-20 text-primary font-semibold">Credit Card</span>
-                            </label>
-                            <label for="bank1" class="w-full flex items-center space-x-3 bg-white py-3.5 px-5 xl:py-5 xl:px-7 rounded-xl lg:rounded-2xl xl:rounded-[36px]">
-                                <div>
-                                    <input type="radio" name="bank" id="bank1" class="input_radio">
-                                </div>
-                                <span class="block text-16 lg:text-18 2xl:text-20 text-primary font-semibold">Net Banking</span>
-                            </label>
-                            <label for="bank2" class="w-full flex items-center space-x-3 bg-white py-3.5 px-5 xl:py-5 xl:px-7 rounded-xl lg:rounded-2xl xl:rounded-[36px]">
-                                <div>
-                                    <input type="radio" name="bank" id="bank2" class="input_radio">
-                                </div>
-                                <span class="block text-16 lg:text-18 2xl:text-20 text-primary font-semibold">Other UPI Apps</span>
-                            </label>
-                            <label for="bank3" class="w-full flex items-center space-x-3 bg-white py-3.5 px-5 xl:py-5 xl:px-7 rounded-xl lg:rounded-2xl xl:rounded-[36px]">
-                                <div>
-                                    <input type="radio" name="bank" id="bank3" class="input_radio">
-                                </div>
-                                <span class="block text-16 lg:text-18 2xl:text-20 text-primary font-semibold">Cash on Delivery/Pay on Delivery</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-[460px] sticky top-0 lg:px-2.5 py-2.5 lg:ml-5 mt-2.5 lg:mt-0">
-                    <div class="bg-white p-7 rounded-md md:rounded-3xl xl:rounded-[36px]">
-                        <div>
-                            <h4 class="mb-5 xl:mb-7">Bill Details</h4>
-                            <div class="space-y-2 lg:space-y-3">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-14 xl:text-16">Item Total</span>
-                                    <span class="text-14 xl:text-16">₹1000</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-14 xl:text-16">Tax (GST)</span>
-                                    <span class="text-14 xl:text-16">₹200</span>
-                                </div>
-                                <div class="flex items-center justify-between pb-8 xl:pb-14 border-b border-[#BCCAD9]">
-                                    <span class="text-14 xl:text-16">Discount</span>
-                                    <span class="text-14 xl:text-16">-₹100</span>
-                                </div>
-                                <div class="flex items-center justify-between mt-4">
-                                    <span>Total</span>
-                                    <span>₹1100</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-6">
-                            <button class="bg-[#FFDEEC] rounded-full py-2 px-[30px] w-full">
-                                <div class="flex items-center justify-between">
-                                    <h3>₹1000</h3>
-                                    <div class="flex items-center space-x-1">
-                                        <span class="gra-text text-16 font-medium">Checkout</span>
-                                        <span class="icon-right-arrow gra-text text-12"></span>
+                        <div class="w-full bg-white rounded-[36px] px-4 lg:px-5 2xl:px-7 py-4 lg:py-5 2xl:py-7">
+                            <div>
+                                <div class="relative w-full max-w-[375px] sm:max-w-full flex flex-wrap sm:flex-nowrap items-center space-y-3 sm:space-y-0 sm:space-x-5 xl:space-x-7 p-5 bg-white rounded-2xl sm:bg-transparent sm:rounded-none sm:p-0">
+                                    <div class="w-full sm:w-auto">
+                                        <div class="mx-auto w-40 lg:w-48 xl:w-64 2xl:w-[200px] px-11 py-7 flex justify-center items-center bg-b4 rounded-2xl">
+                                        <img src="assets/images/image 4.png" alt="product"/>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center w-full">
+                                        <div class="w-full space-y-4">
+                                            <div class="flex items-center w-full">
+                                                <div class="w-full space-y-4">
+                                                    <h3>Pads with wings</h3>
+                                                    <div class="flex items-center">
+                                                        <div class="space-y-1.5 sm:space-y-3 pr-3 lg:pr-5 2xl:pr-7">
+                                                            <div class="flex items-center space-x-4">
+                                                                <h3 class="text-secondary">₹1000</h3>                
+                                                                <span class="inline-block text-secondary/50 line-through text-16 lg:text-18 xl:text-xl">₹9999</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-wrap items-center space-x-0 2xl:space-x-9 pl-3 lg:pl-5 2xl:pl-7 border-l border-b4">
+                                                            <div class="mr-2.5">
+                                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Size</h4>
+                                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5">
+                                                                    <span class="text-primary text-14 bg-white rounded-full font-medium">Regular</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Quantity</h4>
+                                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5 w-full">
+                                                                    <div class="bg-white rounded-full space-x-2 sm:space-x-4 lg:space-x-6 xl:space-x-10">
+                                                                        <span class="text-primary text-14">20</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ml-auto absolute top-5 right-5 sm:relative">
+                                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-b4 rounded-full flex items-center justify-center p-2 cursor-pointer">
+                                                <span class="icon-delete gra-text"></span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </button>
+                            </div>  
+                        </div>
+                        <div class="w-full bg-white rounded-[36px] px-4 lg:px-5 2xl:px-7 py-4 lg:py-5 2xl:py-7">
+                            <div>
+                                <div class="relative w-full max-w-[375px] sm:max-w-full flex flex-wrap sm:flex-nowrap items-center space-y-3 sm:space-y-0 sm:space-x-5 xl:space-x-7 p-5 bg-white rounded-2xl sm:bg-transparent sm:rounded-none sm:p-0">
+                                    <div class="w-full sm:w-auto">
+                                        <div class="mx-auto w-40 lg:w-48 xl:w-64 2xl:w-[200px] px-11 py-7 flex justify-center items-center bg-b4 rounded-2xl">
+                                        <img src="assets/images/image 4.png" alt="product"/>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center w-full">
+                                        <div class="w-full space-y-4">
+                                            <div class="flex items-center w-full">
+                                                <div class="w-full space-y-4">
+                                                    <h3>Pads with wings</h3>
+                                                    <div class="flex items-center">
+                                                        <div class="space-y-1.5 sm:space-y-3 pr-3 lg:pr-5 2xl:pr-7">
+                                                            <div class="flex items-center space-x-4">
+                                                                <h3 class="text-secondary">₹1000</h3>                
+                                                                <span class="inline-block text-secondary/50 line-through text-16 lg:text-18 xl:text-xl">₹9999</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex flex-wrap items-center space-x-0 2xl:space-x-9 pl-3 lg:pl-5 2xl:pl-7 border-l border-b4">
+                                                            <div class="mr-2.5">
+                                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Size</h4>
+                                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5">
+                                                                    <span class="text-primary text-14 bg-white rounded-full font-medium">Regular</span>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="text-14 xl:text-16 text-secondary font-medium">Quantity</h4>
+                                                                <div class="space-x-2 lg:space-x-3 2xl:space-x-4 mt-1.5 sm:mt-2.5 w-full">
+                                                                    <div class="bg-white rounded-full space-x-2 sm:space-x-4 lg:space-x-6 xl:space-x-10">
+                                                                        <span class="text-primary text-14">20</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ml-auto absolute top-5 right-5 sm:relative">
+                                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-b4 rounded-full flex items-center justify-center p-2 cursor-pointer">
+                                                <span class="icon-delete gra-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="assets/images/dflow_ri.webp" class="absolute hidden lg:block bottom-28 2xl:bottom-24 right-0 max-w-60 xl:max-w-80 2xl:max-w-full" alt="flow_group">                      
     </section>
     <footer class="lg:px-2 overflow-hidden">
         <div class="relative">
@@ -688,6 +740,9 @@
             <img src="assets/images/footer_bg.webp" class="absolute inset-0 w-full h-full object-cover 2xl:object-contain" alt="footer_bg"/>
         </div>
     </footer>
+
+  
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
