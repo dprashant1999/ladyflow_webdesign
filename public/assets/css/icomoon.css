@@ -10,97 +10,111 @@
     font-display: block;
   }
   
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-delivered:before {
-  content: "\e911";
-}
-.icon-order-shipped:before {
-  content: "\e912";
-}
-.icon-ready-to-shop:before {
-  content: "\e913";
-}
-.icon-order-comfrim:before {
-  content: "\e914";
-}
-.icon-filter:before {
-  content: "\e915";
-}
-.icon-search:before {
-  content: "\e916";
-}
-.icon-edit:before {
-  content: "\e917";
-}
-.icon-left_arrow:before {
-  content: "\e918";
-}
-.icon-img:before {
-  content: "\e919";
-}
-.icon-order:before {
-  content: "\e90f";
-}
-.icon-logout:before {
-  content: "\e910";
-}
-.icon-star:before {
-  content: "\e900";
-}
-.icon-twitter:before {
-  content: "\e901";
-}
-.icon-linkedin:before {
-  content: "\e902";
-}
-.icon-instagram:before {
-  content: "\e903";
-}
-.icon-facebook:before {
-  content: "\e904";
-}
-.icon-like:before {
-  content: "\e905";
-}
-.icon-down-arrow:before {
-  content: "\e906";
-}
-.icon-delete:before {
-  content: "\e907";
-}
-.icon-right-arrow:before {
-  content: "\e908";
-}
-.icon-user:before {
-  content: "\e909";
-}
-.icon-shopping-cart:before {
-  content: "\e90a";
-}
-.icon-calendar:before {
-  content: "\e90b";
-}
-.icon-right:before {
-  content: "\e90c";
-}
-.icon-left:before {
-  content: "\e90d";
-}
-.icon-plus:before {
-  content: "\e90e";
-}
-
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-minus:before {
+    content: "\e91a";
+  }
+  .icon-delivered:before {
+    content: "\e911";
+    color: #cbd5e1;
+  }
+  .icon-order-shipped:before {
+    content: "\e912";
+    color: #cbd5e1;
+  }
+  .icon-ready-to-shop:before {
+    content: "\e913";
+    color: #cbd5e1;
+  }
+  .icon-order-comfrim:before {
+    content: "\e914";
+    color: #11a75c;
+  }
+  .icon-filter:before {
+    content: "\e915";
+  }
+  .icon-search:before {
+    content: "\e916";
+    color: #8ea6bf;
+  }
+  .icon-edit:before {
+    content: "\e917";
+  }
+  .icon-left_arrow:before {
+    content: "\e918";
+  }
+  .icon-img:before {
+    content: "\e919";
+    color: #bccad9;
+  }
+  .icon-order:before {
+    content: "\e90f";
+    color: #365677;
+  }
+  .icon-logout:before {
+    content: "\e910";
+    color: #ff2d55;
+  }
+  .icon-star:before {
+    content: "\e900";
+  }
+  .icon-twitter:before {
+    content: "\e901";
+  }
+  .icon-linkedin:before {
+    content: "\e902";
+  }
+  .icon-instagram:before {
+    content: "\e903";
+  }
+  .icon-facebook:before {
+    content: "\e904";
+  }
+  .icon-like:before {
+    content: "\e905";
+  }
+  .icon-down-arrow:before {
+    content: "\e906";
+    color: #363853;
+  }
+  .icon-delete:before {
+    content: "\e907";
+  }
+  .icon-right-arrow:before {
+    content: "\e908";
+  }
+  .icon-user:before {
+    content: "\e909";
+  }
+  .icon-shopping-cart:before {
+    content: "\e90a";
+  }
+  .icon-calendar:before {
+    content: "\e90b";
+  }
+  .icon-right:before {
+    content: "\e90c";
+    color: #363853;
+  }
+  .icon-left:before {
+    content: "\e90d";
+    color: #363853;
+  }
+  .icon-plus:before {
+    content: "\e90e";
+  }
+  
