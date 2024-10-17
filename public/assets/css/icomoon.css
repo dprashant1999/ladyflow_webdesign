@@ -25,96 +25,91 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-minus:before {
-    content: "\e91a";
-  }
   .icon-delivered:before {
-    content: "\e911";
-    color: #cbd5e1;
-  }
-  .icon-order-shipped:before {
-    content: "\e912";
-    color: #cbd5e1;
-  }
-  .icon-ready-to-shop:before {
-    content: "\e913";
-    color: #cbd5e1;
-  }
-  .icon-order-comfrim:before {
-    content: "\e914";
-    color: #11a75c;
-  }
-  .icon-filter:before {
-    content: "\e915";
-  }
-  .icon-search:before {
-    content: "\e916";
-    color: #8ea6bf;
-  }
-  .icon-edit:before {
-    content: "\e917";
-  }
-  .icon-left_arrow:before {
-    content: "\e918";
-  }
-  .icon-img:before {
-    content: "\e919";
-    color: #bccad9;
-  }
-  .icon-order:before {
-    content: "\e90f";
-    color: #365677;
-  }
-  .icon-logout:before {
-    content: "\e910";
-    color: #ff2d55;
-  }
-  .icon-star:before {
     content: "\e900";
   }
-  .icon-twitter:before {
+  .icon-google:before {
     content: "\e901";
   }
-  .icon-linkedin:before {
+  .icon-like:before {
     content: "\e902";
   }
-  .icon-instagram:before {
+  .icon-shopping-cart:before {
     content: "\e903";
   }
-  .icon-facebook:before {
+  .icon-minus:before {
     content: "\e904";
   }
-  .icon-like:before {
+  .icon-plus:before {
     content: "\e905";
   }
-  .icon-down-arrow:before {
-    content: "\e906";
-    color: #363853;
-  }
   .icon-delete:before {
+    content: "\e906";
+  }
+  .icon-celender:before {
     content: "\e907";
   }
-  .icon-right-arrow:before {
+  .icon-user:before {
     content: "\e908";
   }
-  .icon-user:before {
-    content: "\e909";
-  }
-  .icon-shopping-cart:before {
-    content: "\e90a";
-  }
-  .icon-calendar:before {
+  .icon-order:before {
     content: "\e90b";
   }
-  .icon-right:before {
+  .icon-logout:before {
     content: "\e90c";
-    color: #363853;
+  }
+  .icon-search:before {
+    content: "\e90d";
+  }
+  .icon-down-arrow:before {
+    content: "\e90e";
+  }
+  .icon-iphone:before {
+    content: "\e911";
+  }
+  .icon-order-confrim:before {
+    content: "\e912";
+  }
+  .icon-order-shipped:before {
+    content: "\e913";
+  }
+  .icon-order-ship:before {
+    content: "\e914";
+  }
+  .icon-img:before {
+    content: "\e917";
+  }
+  .icon-star:before {
+    content: "\e919";
+  }
+  .icon-playstore:before {
+    content: "\e91b";
+  }
+  .icon-facebook:before {
+    content: "\e91d";
+  }
+  .icon-instagram:before {
+    content: "\e91f";
+  }
+  .icon-linkdin:before {
+    content: "\e922";
+  }
+  .icon-twitter:before {
+    content: "\e923";
   }
   .icon-left:before {
-    content: "\e90d";
-    color: #363853;
+    content: "\e925";
   }
-  .icon-plus:before {
-    content: "\e90e";
+  .icon-right:before {
+    content: "\e927";
+  }
+  .icon-left-arrow:before {
+    content: "\e929";
+  }
+  .icon-right-arrow:before {
+    content: "\e92c";
+  }
+  .icon-edit:before {
+    content: "\e92d";
   }
   
