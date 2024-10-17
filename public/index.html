@@ -12,8 +12,8 @@
   <section class="relative min-h-screen bg-white pb-10 xl:pb-24 2xl:pb-44">
     <header class="relative z-50 py-5">
       <div class="wrapper">
-        <div class="flex items-center space-x-5 lg:space-x-10 2xl:space-x-32 justify-center">
-          <ul class="hidden md:flex items-center justify-center space-x-5">
+        <div class="flex items-center space-x-5 lg:space-x-10 2xl:space-x-32 justify-center relative">
+          <ul class="hidden md:flex items-center justify-center space-x-3.5 lg:space-x-5">
             <li class="group">
               <a href="#" class="text-14 lg:text-16 font-light text-primary gra_ghover anim">Our Products</a>
               <ul class="absolute top-full -translate-y-6 xl:-translate-y-10 2xl:-translate-y-14 inset-x-0 w-full bg-white p-5 lg:p-7 py-5 flex items-center justify-center space-x-5 xl:space-x-9 invisible group-hover:visible  group-hover:-translate-y-10 lg:group-hover:-translate-y-12 xl:group-hover:-translate-y-16 shadow-one anim">
@@ -189,7 +189,7 @@
               </div>
             </li>
           </ul>
-          <div class="md:flex items-center space-x-6 hidden relative">
+          <div class="md:flex items-center space-y-2 lg:space-y-0 flex-col lg:flex-row lg:space-x-6 hidden absolute top-1/2 -translate-y-1/2 right-0">
             <ul class="md:flex items-center justify-center space-x-5">
               <li class="group">
                 <div class="flex items-center justify-center w-8 lg:w-10 2xl:w-12 h-8 lg:h-10 2xl:h-12 bg-white rounded-full">
@@ -274,7 +274,7 @@
       </div>
     </header>
     <!-- mobile screen sidebar  -->
-    <div class="w-full h-screen bg-black/30 backdrop-blur-sm fixed inset-0 z-50 anim hidden" id="add">
+    <div class="w-full h-screen bg-black/30 backdrop-blur-sm fixed inset-0 z-50 anim hidden mob_header" id="add">
       <ul class="w-full h-screen max-w-96 p-5 bg-[#FFDEEC] overflow-y-auto">
         <li class="flex items-center justify-between border-b-2 pb-3 mb-2.5 border-[#EC008C]">
           <a href="#">
@@ -356,7 +356,8 @@
         <li class="py-2">
           <div class="flex items-center justify-between title_tab">
             <a href="#" class="text-16 font-medium text-primary">Our Products</a>
-            <span class="icon-plus text-14 font-extrabold block open"></span>
+            <span class="icon-plus text-14 font-extrabold block"></span>
+            <span class="icon-minus text-14 font-extrabold hidden"></span>
           </div>
           <ul class="space-y-4 w-full bg-white rounded-md p-4 mt-3 inner_content hidden">
             <li>
@@ -1223,10 +1224,8 @@
         </div>
     </div>
   </div>
-
   <!-- Login form  -->
   <!-- Sign up form  -->
-
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-8 px-5 overflow-y-auto flex">
         <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
@@ -1236,69 +1235,66 @@
           <div class="absolute top-0 right-0">
             <svg class="w-7 xl:w-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7196 0.61102C14.1927 -0.203673 17.8073 -0.203674 21.2805 0.61102C26.2962 1.78754 30.2125 5.70385 31.389 10.7196C32.2037 14.1927 32.2037 17.8073 31.389 21.2804C30.2125 26.2962 26.2962 30.2125 21.2804 31.389C17.8073 32.2037 14.1927 32.2037 10.7196 31.389C5.70385 30.2125 1.78755 26.2962 0.611022 21.2805C-0.203674 17.8073 -0.203674 14.1927 0.611022 10.7195C1.78755 5.70384 5.70385 1.78754 10.7196 0.61102ZM13.7135 12.2695C13.3148 11.8707 12.6682 11.8707 12.2695 12.2695C11.8707 12.6682 11.8707 13.3148 12.2695 13.7135L14.5559 16L12.2695 18.2864C11.8707 18.6852 11.8707 19.3317 12.2695 19.7305C12.6682 20.1292 13.3148 20.1292 13.7135 19.7305L16 17.444L18.2864 19.7305C18.6852 20.1292 19.3317 20.1292 19.7305 19.7305C20.1292 19.3317 20.1292 18.6852 19.7305 18.2864L17.444 16L19.7305 13.7135C20.1292 13.3148 20.1292 12.6682 19.7305 12.2695C19.3317 11.8707 18.6852 11.8707 18.2864 12.2695L16 14.5559L13.7135 12.2695Z" fill="url(#paint0_linear_1654_20968)"/> <defs> <linearGradient id="paint0_linear_1654_20968" x1="0" y1="16" x2="32" y2="16" gradientUnits="userSpaceOnUse"> <stop stop-color="#EC008C"/> <stop offset="1" stop-color="#FC6767"/> </linearGradient> </defs> </svg>
           </div>
-          </div>
-            <p class="text-secondary font-light text18 max-w-[360px] mx-auto text-center mt-2.5 lg:mt-3.5 2xl:mt-5">Please fill details to Sign Up</p>
-            <div class="mt-5 lg:mt-7 2xl:mt-9 space-y-2.5 lg:space-y-3.5 2xl:space-y-5 max-w-[500px] mx-auto">
-              <form class="text-center space-y-3 lg:space-y-4 2xl:space-y-6">
-                <div class="w-20 h-20 bg-b4 rounded-full flex items-center justify-center mx-auto relative">
-                  <span class="icon-user text-b2 text-18"></span>
-                  <div class="w-9 h-9 bg-b4 rounded-full flex items-center justify-center border-2 border-white absolute -bottom-2 -right-2">
-                    <span class="icon-img text-14 text-b2"></span>
-                  </div>
-                </div>
-                <div class="space-y-2.5 lg:space-y-4 2xl:space-y-5">
-                  <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Full Name">
-                  <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Email">
-                  <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Mobile Number">
-                </div>
-                <div class="text-left">
-                  <span class="text-primary text-14 2xl:text-16 font-medium block mb-2.5 2xl:mb-3">Gender</span>
-                  <div class="flex items-center space-x-3 lg:space-x-6 2xl:space-x-8">
-                    <div class="flex space-x-2">
-                      <input type="radio" name="gender" id="gender1" class="input_radio_popup"/>
-                      <label for="gender1" class="text-14 text-secondary font-medium ">Male</label>
-                    </div>
-                    <div class="flex space-x-2">
-                      <input type="radio" name="gender" id="gender2" class="input_radio_popup"/>
-                      <label for="gender2" class="text-14 text-secondary font-medium ">Female</label>
-                    </div>
-                    <div class="flex space-x-2">
-                      <input type="radio" name="gender" id="gender3" class="input_radio_popup"/>
-                      <label for="gender3" class="text-14 text-secondary font-medium ">Others</label>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="mt-8 lg:mt-10 2xl:mt-12 text-center">
-              <a href="#" class="relative w-max inline-block btn">
-                <img src="assets/images/btn_primary.svg" class="max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-full" alt="btn_primary">
-                <span class=" text-white">Sign UP</span>
-              </a>
-              <span class="block text-secondary text-14 font-medium mt-2">Or</span>
-              <div class="flex flex-wrap items-center space-y-3 md:space-y-0 md:space-x-3 space-x-0 justify-center mt-2.5 lg:mt-3 2xl:mt-4">
-                <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
-                  <img src="assets/images/google_logo.svg" alt="google_logo"/>
-                 <span class="text-12 text-secondary font-medium"> Sign Up With Google</span>
-                </button>
-                <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
-                  <img src="assets/images/facebook.svg" alt="facebook"/>
-                 <span class="text-12 text-secondary font-medium"> Sign Up With Facebook</span>
-                </button>
-                <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
-                  <img src="assets/images/apple.svg" alt="apple"/>
-                 <span class="text-12 text-secondary font-medium"> Sign Up With Apple</span>
-                </button>
+        </div>
+        <p class="text-secondary font-light text18 max-w-[360px] mx-auto text-center mt-2.5 lg:mt-3.5 2xl:mt-5">Please fill details to Sign Up</p>
+        <div class="mt-5 lg:mt-7 2xl:mt-9 space-y-2.5 lg:space-y-3.5 2xl:space-y-5 max-w-[500px] mx-auto">
+          <form class="text-center space-y-3 lg:space-y-4 2xl:space-y-6">
+            <div class="w-20 h-20 bg-b4 rounded-full flex items-center justify-center mx-auto relative">
+              <span class="icon-user text-b2 text-18"></span>
+              <div class="w-9 h-9 bg-b4 rounded-full flex items-center justify-center border-2 border-white absolute -bottom-2 -right-2">
+                <span class="icon-img text-14 text-b2"></span>
               </div>
-              <span class="text-primary text-14 2xl:text-16 font-medium block mt-2.5 lg:mt-4 2xl:mt-6">Already have an account?  <a href="#" class="gra-text inline-block underline">Login</a></span>
             </div>
+            <div class="space-y-2.5 lg:space-y-4 2xl:space-y-5">
+              <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Full Name">
+              <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Email">
+              <input type="text" class="w-full max-w-[500px] outline-none mx-auto rounded-full bg-b4 text-secondary font-light text-14 2xl:text-16 px-5 lg:px-6 2xl:px-7 py-2.5 lg:py-3 2xl:py-4" placeholder="Enter Mobile Number">
+            </div>
+            <div class="text-left">
+              <span class="text-primary text-14 2xl:text-16 font-medium block mb-2.5 2xl:mb-3">Gender</span>
+              <div class="flex items-center space-x-3 lg:space-x-6 2xl:space-x-8">
+                <div class="flex space-x-2">
+                  <input type="radio" name="gender" id="gender1" class="input_radio_popup"/>
+                  <label for="gender1" class="text-14 text-secondary font-medium ">Male</label>
+                </div>
+                <div class="flex space-x-2">
+                  <input type="radio" name="gender" id="gender2" class="input_radio_popup"/>
+                  <label for="gender2" class="text-14 text-secondary font-medium ">Female</label>
+                </div>
+                <div class="flex space-x-2">
+                  <input type="radio" name="gender" id="gender3" class="input_radio_popup"/>
+                  <label for="gender3" class="text-14 text-secondary font-medium ">Others</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="mt-8 lg:mt-10 2xl:mt-12 text-center">
+          <a href="#" class="relative w-max inline-block btn">
+            <img src="assets/images/btn_primary.svg" class="max-w-32 md:max-w-40 lg:max-w-48 xl:max-w-full" alt="btn_primary">
+            <span class=" text-white">Sign UP</span>
+          </a>
+          <span class="block text-secondary text-14 font-medium mt-2">Or</span>
+          <div class="flex flex-wrap items-center space-y-3 md:space-y-0 md:space-x-3 space-x-0 justify-center mt-2.5 lg:mt-3 2xl:mt-4">
+            <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
+              <img src="assets/images/google_logo.svg" alt="google_logo"/>
+              <span class="text-12 text-secondary font-medium"> Sign Up With Google</span>
+            </button>
+            <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
+              <img src="assets/images/facebook.svg" alt="facebook"/>
+              <span class="text-12 text-secondary font-medium"> Sign Up With Facebook</span>
+            </button>
+            <button class="bg-b4 py-2.5 2xl:py-3.5 px-3.5 2xl:px-5 rounded-full  flex items-center space-x-2">
+              <img src="assets/images/apple.svg" alt="apple"/>
+              <span class="text-12 text-secondary font-medium"> Sign Up With Apple</span>
+            </button>
+          </div>
+          <span class="text-primary text-14 2xl:text-16 font-medium block mt-2.5 lg:mt-4 2xl:mt-6">Already have an account?  <a href="#" class="gra-text inline-block underline">Login</a></span>
         </div>
     </div>
   </div>
-
   <!-- Sign up form  -->
   <!-- Login OTP Verification  -->
-
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
         <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
@@ -1335,10 +1331,8 @@
         </div>
     </div>
   </div>
-
   <!-- Login OTP Verification  -->
   <!-- order history filter  -->
-
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
         <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
@@ -1383,11 +1377,8 @@
         </div>
     </div>
   </div>
-
   <!-- order history filter  -->
-
   <!-- cancel order  -->
-
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
         <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
@@ -1426,11 +1417,8 @@
         </div>
     </div>
   </div>
-
   <!-- cancel order  -->
-
   <!-- logout popup  -->
-
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
         <div class="w-full max-w-[700px] bg-white p-5 lg:p-6 2xl:p-7 rounded-2xl lg:rounded-3xl 2xl:rounded-[36px] m-auto">
@@ -1457,9 +1445,7 @@
         </div>
     </div>
   </div>
-
   <!-- logout popup  -->
-
   <!-- edit address  -->
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
@@ -1511,7 +1497,6 @@
     </div>
   </div>
   <!-- edit address  -->
-
   <!-- delete address  -->
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
@@ -1541,7 +1526,6 @@
     </div>
   </div>
   <!-- delete address  -->
-
   <!-- new address  -->
   <div class="fixed inset-0 w-full h-screen bg-black/30 backdrop-blur-sm z-50 flex hidden">
     <div class="w-full h-full py-12 px-5 overflow-y-auto flex">
