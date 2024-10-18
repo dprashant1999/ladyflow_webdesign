@@ -44,6 +44,8 @@ section{@apply relative;}
   animation: flower_l 3s infinite alternate ease-in-out;
 }
 
+#account_menu.open{@apply translate-y-1 visible;}
+
 
 .input_radio {
   appearance: none;
