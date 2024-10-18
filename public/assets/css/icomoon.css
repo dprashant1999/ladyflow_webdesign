@@ -25,22 +25,52 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-filter:before {
+    content: "\e91e";
+  }
+  .icon-menu:before {
+    content: "\e909";
+  }
+  .icon-minus2:before {
+    content: "\e90a";
+  }
+  .icon-plus:before {
+    content: "\e90f";
+  }
+  .icon-user:before {
+    content: "\e910";
+  }
+  .icon-like:before {
+    content: "\e915";
+  }
+  .icon-minus:before {
+    content: "\e916";
+  }
+  .icon-plus1:before {
+    content: "\e918";
+  }
+  .icon-user1:before {
+    content: "\e91a";
+  }
+  .icon-like1:before {
+    content: "\e91c";
+  }
   .icon-delivered:before {
     content: "\e900";
   }
   .icon-google:before {
     content: "\e901";
   }
-  .icon-like:before {
+  .icon-like2:before {
     content: "\e902";
   }
   .icon-shopping-cart:before {
     content: "\e903";
   }
-  .icon-minus:before {
+  .icon-minus1:before {
     content: "\e904";
   }
-  .icon-plus:before {
+  .icon-plus2:before {
     content: "\e905";
   }
   .icon-delete:before {
@@ -49,7 +79,7 @@
   .icon-celender:before {
     content: "\e907";
   }
-  .icon-user:before {
+  .icon-user2:before {
     content: "\e908";
   }
   .icon-order:before {
@@ -112,4 +142,5 @@
   .icon-edit:before {
     content: "\e92d";
   }
+  
   
