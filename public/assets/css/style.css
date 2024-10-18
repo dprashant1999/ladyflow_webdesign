@@ -2383,6 +2383,11 @@ section{
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
@@ -2390,11 +2395,6 @@ section{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-primary_gra{
@@ -2726,6 +2726,11 @@ section{
 .text-24{
   font-size: 24px;
   line-height: 32px;
+}
+
+.text-26{
+  font-size: 26px;
+  line-height: 36px;
 }
 
 .text-28{
@@ -3590,6 +3595,11 @@ section{
   .md\:text-16{
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .md\:text-20{
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .md\:opacity-0{
@@ -5140,5 +5150,10 @@ section{
 
   .\32xl\:text-\[10px\]{
     font-size: 10px;
+  }
+
+  .\32xl\:text-26{
+    font-size: 26px;
+    line-height: 36px;
   }
 }
