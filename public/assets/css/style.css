@@ -1228,8 +1228,8 @@ section{
   left: 27%;
 }
 
-.left-\[60\%\]{
-  left: 60%;
+.left-\[70\%\]{
+  left: 70%;
 }
 
 .right-0{
@@ -1284,10 +1284,6 @@ section{
   top: 2.5rem;
 }
 
-.top-16{
-  top: 4rem;
-}
-
 .top-2{
   top: 0.5rem;
 }
@@ -1322,6 +1318,14 @@ section{
 
 .top-full{
   top: 100%;
+}
+
+.left-\[60\%\]{
+  left: 60%;
+}
+
+.top-16{
+  top: 4rem;
 }
 
 .-z-0{
@@ -1421,6 +1425,10 @@ section{
 .my-2\.5{
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
+}
+
+.-mr-10{
+  margin-right: -2.5rem;
 }
 
 .-mt-0{
@@ -1844,6 +1852,10 @@ section{
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-52{
+  max-width: 13rem;
 }
 
 .max-w-5xl{
@@ -2292,6 +2304,10 @@ section{
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-dashed{
+  border-style: dashed;
 }
 
 .border-\[\#BCCAD9\]{
@@ -3272,6 +3288,10 @@ section{
     bottom: 3rem;
   }
 
+  .md\:left-\[66\%\]{
+    left: 66%;
+  }
+
   .md\:right-\[10\%\]{
     right: 10%;
   }
@@ -3649,6 +3669,10 @@ section{
     margin-right: -1.25rem;
   }
 
+  .lg\:-mr-20{
+    margin-right: -5rem;
+  }
+
   .lg\:-mt-40{
     margin-top: -10rem;
   }
@@ -3675,6 +3699,10 @@ section{
 
   .lg\:mb-7{
     margin-bottom: 1.75rem;
+  }
+
+  .lg\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .lg\:ml-5{
@@ -4254,6 +4282,11 @@ section{
     line-height: 28px;
   }
 
+  .lg\:text-22{
+    font-size: 22px;
+    line-height: 30px;
+  }
+
   .lg\:text-26{
     font-size: 26px;
     line-height: 36px;
@@ -4262,11 +4295,6 @@ section{
   .lg\:text-40{
     font-size: 40px;
     line-height: 52px;
-  }
-
-  .lg\:text-22{
-    font-size: 22px;
-    line-height: 30px;
   }
 
   .lg\:opacity-100{
@@ -4714,6 +4742,10 @@ section{
     margin-right: 0px;
   }
 
+  .\32xl\:-mr-40{
+    margin-right: -10rem;
+  }
+
   .\32xl\:-mt-36{
     margin-top: -9rem;
   }
@@ -4752,6 +4784,10 @@ section{
 
   .\32xl\:mb-\[30px\]{
     margin-bottom: 30px;
+  }
+
+  .\32xl\:ml-32{
+    margin-left: 8rem;
   }
 
   .\32xl\:mr-0{
@@ -4832,6 +4868,10 @@ section{
 
   .\32xl\:w-\[338px\]{
     width: 338px;
+  }
+
+  .\32xl\:w-\[80\%\]{
+    width: 80%;
   }
 
   .\32xl\:max-w-14{
@@ -5123,6 +5163,11 @@ section{
     text-align: left;
   }
 
+  .\32xl\:text-14{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
   .\32xl\:text-16{
     font-size: 16px;
     line-height: 24px;
@@ -5155,10 +5200,5 @@ section{
 
   .\32xl\:text-\[10px\]{
     font-size: 10px;
-  }
-
-  .\32xl\:text-14{
-    font-size: 14px;
-    line-height: 22px;
   }
 }
