@@ -2756,11 +2756,6 @@ section{
   line-height: 1rem;
 }
 
-.text-26{
-  font-size: 26px;
-  line-height: 36px;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -3602,11 +3597,6 @@ section{
     line-height: 24px;
   }
 
-  .md\:text-20{
-    font-size: 20px;
-    line-height: 28px;
-  }
-
   .md\:opacity-0{
     opacity: 0;
   }
@@ -4272,6 +4262,11 @@ section{
   .lg\:text-40{
     font-size: 40px;
     line-height: 52px;
+  }
+
+  .lg\:text-22{
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .lg\:opacity-100{
@@ -5143,6 +5138,11 @@ section{
     line-height: 32px;
   }
 
+  .\32xl\:text-26{
+    font-size: 26px;
+    line-height: 36px;
+  }
+
   .\32xl\:text-32{
     font-size: 32px;
     line-height: 40px;
@@ -5157,8 +5157,8 @@ section{
     font-size: 10px;
   }
 
-  .\32xl\:text-26{
-    font-size: 26px;
-    line-height: 36px;
+  .\32xl\:text-14{
+    font-size: 14px;
+    line-height: 22px;
   }
 }
