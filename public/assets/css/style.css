@@ -1495,6 +1495,10 @@ section{
   margin-right: 0.5rem;
 }
 
+.mr-2\.5{
+  margin-right: 0.625rem;
+}
+
 .mr-3{
   margin-right: 0.75rem;
 }
@@ -1565,6 +1569,10 @@ section{
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
 }
 
 .mt-auto{
@@ -1725,12 +1733,20 @@ section{
   width: 1rem;
 }
 
+.w-4\/12{
+  width: 33.333333%;
+}
+
 .w-40{
   width: 10rem;
 }
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-6\/12{
+  width: 50%;
 }
 
 .w-7{
@@ -1747,6 +1763,10 @@ section{
 
 .w-9\/12{
   width: 75%;
+}
+
+.w-\[426px\]{
+  width: 426px;
 }
 
 .w-\[460px\]{
@@ -2415,6 +2435,10 @@ section{
   padding: 0.25rem;
 }
 
+.p-12{
+  padding: 3rem;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2454,6 +2478,11 @@ section{
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-11{
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .px-2{
@@ -2516,6 +2545,11 @@ section{
   padding-bottom: 0.375rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -2571,8 +2605,9 @@ section{
   padding-bottom: 2rem;
 }
 
-.pb-0{
-  padding-bottom: 0px;
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .pb-10{
@@ -2667,6 +2702,10 @@ section{
   padding-top: 1rem;
 }
 
+.pb-0{
+  padding-bottom: 0px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2719,6 +2758,10 @@ section{
   line-height: 36px;
 }
 
+.text-\[10px\]{
+  font-size: 10px;
+}
+
 .text-\[8px\]{
   font-size: 8px;
 }
@@ -2762,11 +2805,6 @@ section{
   color: rgb(17 167 92 / var(--tw-text-opacity));
 }
 
-.text-\[\#363853\]{
-  --tw-text-opacity: 1;
-  color: rgb(54 56 83 / var(--tw-text-opacity));
-}
-
 .text-\[\#CBD5E1\]{
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -2785,16 +2823,6 @@ section{
 .text-\[\#FC6767\]{
   --tw-text-opacity: 1;
   color: rgb(252 103 103 / var(--tw-text-opacity));
-}
-
-.text-\[\#FF2D55\]{
-  --tw-text-opacity: 1;
-  color: rgb(255 45 85 / var(--tw-text-opacity));
-}
-
-.text-b1{
-  --tw-text-opacity: 1;
-  color: rgb(188 202 217 / var(--tw-text-opacity));
 }
 
 .text-b2{
@@ -2828,6 +2856,21 @@ section{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#FF2D55\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 45 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#363853\]{
+  --tw-text-opacity: 1;
+  color: rgb(54 56 83 / var(--tw-text-opacity));
+}
+
+.text-b1{
+  --tw-text-opacity: 1;
+  color: rgb(188 202 217 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3116,6 +3159,12 @@ section{
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
   }
 
+  .sm\:space-y-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
   .sm\:space-y-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3181,14 +3230,14 @@ section{
     padding-bottom: 0.625rem;
   }
 
-  .sm\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
   .sm\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .sm\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .sm\:pb-12{
@@ -3859,6 +3908,10 @@ section{
     width: calc(100% - 384px);
   }
 
+  .lg\:w-\[calc\(100\%-426px\)\]{
+    width: calc(100% - 426px);
+  }
+
   .lg\:w-\[calc\(100\%-460px\)\]{
     width: calc(100% - 460px);
   }
@@ -4315,6 +4368,10 @@ section{
     margin-bottom: 1.75rem;
   }
 
+  .xl\:mb-9{
+    margin-bottom: 2.25rem;
+  }
+
   .xl\:ml-3{
     margin-left: 0.75rem;
   }
@@ -4329,6 +4386,10 @@ section{
 
   .xl\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .xl\:mt-9{
+    margin-top: 2.25rem;
   }
 
   .xl\:block{
