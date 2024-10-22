@@ -123,6 +123,17 @@ $('.title_tab_3').click(function (j) {
           // 👉 Call API below
       }
 
+    //   faqs Tabs
+      $(document).ready(function () {
+        $('.fq_tabs button').click(function () {
+          var tab_id = $(this).attr('data-tab');
+          $('.fq_tabs button').removeClass('active');
+          $('.fqtab_content').removeClass('active');
+          $(this).addClass('active');
+          $("#" + tab_id).addClass('active');
+        });
+      });
+
        // half slider
        var swiper = new Swiper(".swiper-container.swiper_half", {
         slidesPerView: 1, 

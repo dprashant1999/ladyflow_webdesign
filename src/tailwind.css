@@ -35,6 +35,8 @@ section{@apply relative;}
 .title_tab.active span.open {
   transform: rotate(90deg);
 }
+.title_tab_3.active span.icon-down-arrow {transform: rotate(-180deg);}
+
 .btn span{@apply absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-14 lg:text-16;}
 
 .flo_right {
@@ -44,8 +46,11 @@ section{@apply relative;}
   animation: flower_l 3s infinite alternate ease-in-out;
 }
 
+.fqtab_content{@apply hidden;}
+.fqtab_content.active{@apply block;}
+.fq_tabs button.active .active_off{@apply hidden;}
+.fq_tabs button.active .active_on{@apply block;}
 #account_menu.open{@apply translate-y-1 visible;}
-
 
 .input_radio {
   appearance: none;

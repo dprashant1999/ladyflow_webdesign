@@ -486,7 +486,7 @@
         <img src="assets/images/flower_laft.webp" class="flo_left hidden md:block absolute left-10 top-10 max-w-48 xl:max-w-60 2xl:max-w-80 z-10" alt="flower_left"/>
     </section>
     <section class="overflow-hidden">
-        <div class="wrapper primary_paddingg">
+        <div class="wrapper primary_paddingg relative z-10">
             <div class="text-center space-y-6">
                 <h2>
                     Looking for
@@ -497,37 +497,55 @@
                 </h2>
                 <p class="text18 text-secondary font-light max-w-2xl mx-auto">We know you have lots of queries around menstruation and menstrual products. Get all your queries answered on puberty, menarche, menopause and menstrual hygiene in this section. Have a great period!</p>
             </div>
-            <div class="flex flex-wrap -mx-2.5 mt-8 lg:mt-10 2xl:mt-16 pb-8 lg:pb-10 2xl:pb-16">
-                <div class="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2.5 space-y-4">
-                    <img src="assets/images/menstruation.webp" alt="menstruation" class="mx-auto"/>
-                    <span class="text-12 xl:text-14 text-primary font-medium block text-center">Menstruation</span>
+            <div class="flex flex-wrap -mx-2.5 mt-8 lg:mt-10 2xl:mt-16 pb-8 lg:pb-10 2xl:pb-16 fq_tabs">
+                <div class="w-1/3 sm:w-1/6 xl:w-1/6 p-2.5">
+                  <button class="active" data-tab="menstruation">
+                    <img src="assets/images/menstruation.webp" alt="menstruation" class="mx-auto active_off"/>
+                    <img src="assets/images/menstruation_active.webp" alt="menstruation" class="mx-auto hidden active_on"/>
+                    <span class="text-12 xl:text-14 text-primary font-medium block mt-2 xl:mt-4 text-center">Menstruation</span>
+                  </button>
                 </div>
-                <div class="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2.5 space-y-4">
-                    <img src="assets/images/pads-2.webp" alt="pads-2" class="mx-auto"/>
-                    <span class="text-12 xl:text-14 text-primary font-medium block text-center">Pads</span>
+                <div class="w-1/3 sm:w-1/6 xl:w-1/6 p-2.5">
+                  <button data-tab="pads">
+                    <img src="assets/images/pads-2.webp" alt="pads-2" class="mx-auto active_off"/>
+                    <img src="assets/images/pads_active.webp" alt="pads-2" class="mx-auto hidden active_on"/>
+                    <span class="text-12 xl:text-14 text-primary font-medium block mt-2 xl:mt-4 text-center">Pads</span>
+                  </button>
                 </div>
-                <div class="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2.5 space-y-4">
-                    <img src="assets/images/tampons-2.webp" alt="tampons-2" class="mx-auto"/>
-                    <span class="text-12 xl:text-14 text-primary font-medium block text-center">Tampons</span>
+                <div class="w-1/3 sm:w-1/6 xl:w-1/6 p-2.5">
+                  <button data-tab="tampons">
+                    <img src="assets/images/tampons-2.webp" alt="tampons-2" class="mx-auto active_off"/>
+                    <img src="assets/images/tampons_active.webp" alt="tampons-2" class="mx-auto hidden active_on"/>
+                    <span class="text-12 xl:text-14 text-primary font-medium block mt-2 xl:mt-4 text-center">Tampons</span>
+                  </button>
                 </div>
-                <div class="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2.5 space-y-4">
-                    <img src="assets/images/cup-2.webp" alt="cup-2" class="mx-auto"/>
-                    <span class="text-12 xl:text-14 text-primary font-medium block text-center">Menstrual Cup</span>
+                <div class="w-1/3 sm:w-1/6 xl:w-1/6 p-2.5">
+                  <button data-tab="menstrual_cup">
+                    <img src="assets/images/cup-2.webp" alt="cup-2" class="mx-auto active_off"/>
+                    <img src="assets/images/cup_active.webp" alt="cup-2" class="mx-auto hidden active_on"/>
+                    <span class="text-12 xl:text-14 text-primary font-medium block mt-2 xl:mt-4 text-center">Menstrual Cup</span>
+                  </button>
                 </div>
-                <div class="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2.5 space-y-4">
-                    <img src="assets/images/wipes-2.webp" alt="wipes-2" class="mx-auto"/>
-                    <span class="text-12 xl:text-14 text-primary font-medium block text-center">Wipes</span>
+                <div class="w-1/3 sm:w-1/6 xl:w-1/6 p-2.5">
+                  <button data-tab="wipes">
+                    <img src="assets/images/wipes-2.webp" alt="wipes-2" class="mx-auto active_off"/>
+                    <img src="assets/images/wipes_active.webp" alt="wipes-2" class="mx-auto hidden active_on"/>
+                    <span class="text-12 xl:text-14 text-primary font-medium block mt-2 xl:mt-4 text-center">Wipes</span>
+                  </button>
                 </div>
-                <div class="w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 p-2.5 space-y-4">
-                    <img src="assets/images/water-bag-2.webp" alt="water-bag-2" class="mx-auto"/>
-                    <span class="text-12 xl:text-14 text-primary font-medium block text-center">Hot Water Bag</span>
+                <div class="w-1/3 sm:w-1/6 xl:w-1/6 p-2.5">
+                  <button data-tab="hot_water_bag">
+                    <img src="assets/images/water-bag-2.webp" alt="water-bag-2" class="mx-auto active_off"/>
+                    <img src="assets/images/water-bag_active.webp" alt="water-bag-2" class="mx-auto hidden active_on"/>
+                    <span class="text-12 xl:text-14 text-primary font-medium block mt-2 xl:mt-4 text-center">Hot Water Bag</span>
+                  </button>
                 </div>
             </div>
-            <div>
-                <h3 class="mb-9">Tampons</h3>
-                <div class="space-y-6">
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+            <div class="space-y-4 md:space-y-6 xl:space-y-9 fqtab_content" id="tampons">
+                <h3>Tampons</h3>
+                <div class="w-full">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>How do I insert a tampon?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -535,8 +553,8 @@
                            <p class="text18 text-secondary font-light">To insert a tampon, make sure your hands are clean. Relax and find a comfortable position (sitting or standing). Gently insert the tampon into the vaginal opening at an angle, aiming toward the small of your back. Push the applicator until the tampon is comfortably in place, then remove the applicator.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>How often should I change my tampon?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -544,8 +562,8 @@
                            <p class="text18 text-secondary font-light">Tampons should be changed every 4-8 hours, depending on your flow. For heavier flow, change it more frequently, and never leave a tampon in for more than 8 hours to avoid the risk of Toxic Shock Syndrome (TSS).</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>Can I sleep with a tampon in?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -553,8 +571,8 @@
                            <p class="text18 text-secondary font-light">Yes, you can sleep with a tampon, but it’s recommended to use a fresh tampon before bed and ensure it is removed after a maximum of 8 hours. Alternatively, consider using a pad or menstrual cup overnight.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>What size tampon should I use?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -562,8 +580,8 @@
                            <p class="text18 text-secondary font-light">Tampons come in different absorbencies: light, regular, super, and super plus. Choose based on your flow. Start with a lower absorbency and adjust as needed. A tampon should be easy to remove after 4-8 hours without discomfort.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>Can I swim while using a tampon?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -571,8 +589,8 @@
                            <p class="text18 text-secondary font-light">Yes, tampons are ideal for swimming as they sit inside the body and do not absorb water like pads. Make sure to change it after swimming to maintain hygiene.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>What is Toxic Shock Syndrome (TSS) and how is it related to tampon use?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -580,8 +598,8 @@
                            <p class="text18 text-secondary font-light">TSS is a rare but serious bacterial infection linked to tampon use when tampons are left in for too long (more than 8 hours). To reduce the risk, use the lowest absorbency needed, change tampons frequently, and follow hygiene guidelines.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>Can I use tampons if I'm a virgin?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -589,8 +607,8 @@
                            <p class="text18 text-secondary font-light">Yes, virgins can use tampons. Using a tampon won’t affect your virginity. Start with smaller sizes (light or regular) for comfort and ease, and relax to make insertion easier.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>What should I do if my tampon feels uncomfortable or painful?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -598,8 +616,8 @@
                            <p class="text18 text-secondary font-light">If your tampon feels uncomfortable or painful, it may not be inserted far enough. Remove it and try inserting a new one deeper into the vagina. If the discomfort continues, consider switching to a smaller size or another menstrual product.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4 pb-5 border-b border-[#BCCAD9]">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>Can I use a tampon while I have an IUD?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -607,8 +625,8 @@
                            <p class="text18 text-secondary font-light">Yes, you can safely use tampons with an IUD. Just be careful not to pull on the IUD strings when removing the tampon. If you're concerned, consult with your healthcare provider.</p>
                         </div>
                     </div>
-                    <div class="w-full space-y-4">
-                        <div class="flex items-center justify-between title_tab_3">
+                    <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5">
+                        <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
                             <h4>Can I flush tampons down the toilet?</h4>
                             <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
                         </div>
@@ -618,12 +636,492 @@
                     </div>
                 </div>
             </div>
+            <div class="space-y-4 md:space-y-6 xl:space-y-9 fqtab_content active" id="menstruation">
+              <h3>Menstruation</h3>
+              <div class="w-full">
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What is a menstrual cycle?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">A menstrual cycle begins from the first day of one period and ends at the first day of the next. A typical cycle of an adult female is 28 days, although some are as short as 22 days and may be as long as 40 days. Periods usually last for 3-7 days. During a menstrual cycle, a woman passes out 2-4 tablespoons (30 – 59ml) of blood.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What is Pre-Menstrual Syndrome (PMS)?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">PMS includes various types of emotional changes that many girls experience before their period begins. These symptoms include food craving, depression, irritability etc.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Does menstruation lead to anaemia in girls / women?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">This is one of various myths associated with menstruation. The fact is that in healthy girls / women, menstruation doesn’t cause iron deficiency.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Should you not bathe or wash your hair during menstruation?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">This is one of the various myths associated with menstruation. The fact is that taking bath is important especially during menstruation so as to keep oneself clean and hygienic. A nice warm water bath can help in relieving menstrual cramps and premenstrual tension.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Is a menstruating woman impure or sick?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">This is one of the various myths associated with menstruation. The fact is that menstrual fluid is a mixture of blood and tissues and no woman is impure when she is menstruating</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How to avoid rashes and infection during menstruation?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">To avoid rashes, keep the area between the thighs dry and clean. Wash your genital area properly with water and dry it after every time you go to the toilet. Always wipe from front to back direction after defecation to avoid infection. Change the pad after every 4-5 hours for hygiene and to avoid staining and foul odor. Keep yourself clean and bathe regularly.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How to take care of oneself during menstruation?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">Some tips for taking care of yourself during periods are as follows: –</p>
+                         <ul class="list-decimal text18 text-secondary font-light pl-6">
+                            <li>Eat a balanced diet rich in fruits and vegetables.</li>
+                            <li>Eat an iron rich diet to avoid anaemia.</li>
+                            <li>Foods like meat / dal / green leafy vegetables and beans are recommended.</li>
+                            <li>Reduce intake of salt which causes water retention.</li>
+                            <li>Take a brisk walk to relieve stress.</li>
+                            <li>Put a hot water bottle on the abdomen, which may help relax.</li>
+                            <li>Do regular exercise.</li>
+                         </ul>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                    <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                        <h4>What abnormalities in menstruation suggest that one should visit a doctor?</h4>
+                        <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                    </div>
+                    <div class="inner_content_3 max-w-[1386px]">
+                       <p class="text18 text-secondary font-light">You must consult a doctor if your periods:</p>
+                       <ul class="list-decimal text18 text-secondary font-light pl-6">
+                          <li>Started before the age of 8 years</li>
+                          <li>Have not started by the age of 15 years</li>
+                          <li>Comes before 22 days or is as late as 40 days</li>
+                          <li>Are heavy or scanty</li>
+                          <li>Are very painful and you’re not able to continue your routine work</li>
+                       </ul>
+                    </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Is it harmful to exercise or do strenuous activities during menstruation?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                         <p class="text18 text-secondary font-light">This is one of the various myths associated with menstruation. The fact is that it is a normal process and one can continue with the daily routine.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="space-y-4 md:space-y-6 xl:space-y-9 fqtab_content" id="pads">
+              <h3>Pads</h3>
+              <div class="w-full">
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How often should I change my sanitary pad?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">It's recommended to change your pad every 4-6 hours, depending on your flow. During heavier days, you might need to change it more frequently to maintain hygiene and prevent leaks.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are sanitary pads safe to use?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, sanitary pads are generally safe. However, it's important to choose pads that suit your skin type to avoid irritation, and to change them regularly to maintain cleanliness.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I wear a pad overnight?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, you can wear a pad overnight. Look for pads specifically designed for overnight use, which are typically longer and more absorbent to provide added protection while you sleep.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What are the benefits of using organic sanitary pads?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Organic pads are made from natural, chemical-free materials, making them a great choice for sensitive skin. They also reduce exposure to potential irritants like synthetic fragrances, dyes, and plastics.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What should I do if a pad causes irritation or a rash?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">If you experience irritation or a rash, try switching to pads made from hypoallergenic or organic materials. Ensure that you are changing your pad frequently and keeping the area clean. If irritation persists, consult a healthcare professional.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How do I properly dispose of a used sanitary pad?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Wrap the used pad in toilet paper or the wrapper it came in, and dispose of it in a bin. Avoid flushing sanitary pads down the toilet, as they can cause blockages and harm the environment.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are sanitary pads biodegradable?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Most regular pads are not biodegradable due to the plastic materials they contain. However, many brands now offer eco-friendly, biodegradable pads made from natural materials like organic cotton or bamboo.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I wear a sanitary pad while exercising or swimming?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Pads can be worn during exercise but are not recommended for swimming as they can become soaked with water and less effective. For swimming, consider using tampons or menstrual cups instead.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What's the difference between day and night pads?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Day pads are typically shorter and designed for lighter flows, while night pads are longer, providing more coverage and absorbency to prevent leaks during sleep.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can sanitary pads expire?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">While sanitary pads don’t typically have an expiration date, it's best to store them in a cool, dry place. Over time, the adhesive might lose its effectiveness, and materials could degrade if exposed to moisture or extreme heat.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="space-y-4 md:space-y-6 xl:space-y-9 fqtab_content" id="menstrual_cup">
+              <h3>Menstrual Cup</h3>
+              <div class="w-full">
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What is a menstrual cup and how does it work?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">A menstrual cup is a reusable, bell-shaped silicone, rubber, or plastic device inserted into the vagina to collect menstrual blood. Unlike pads and tampons, which absorb the flow, the cup collects it, and it can be emptied, cleaned, and reused for up to 10 years.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How do I insert and remove a menstrual cup?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">To insert, fold the cup and gently insert it into your vagina, where it will unfold and create a seal to collect menstrual fluid. To remove, pinch the base to break the seal and gently pull it out. Always wash your hands before inserting or removing.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How often should I empty my menstrual cup?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">You should empty your menstrual cup every 8-12 hours, depending on your flow. On heavier days, you might need to empty it more frequently. Cups can hold more fluid than tampons, so many people find them more convenient.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I use a menstrual cup if I have a heavy flow?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes! Menstrual cups are suitable for all flow levels. Most cups can hold between 20-30ml of fluid, which is about twice as much as a regular tampon, making them a great option for heavy flow days.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Is it safe to wear a menstrual cup overnight?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, it is safe to wear a menstrual cup overnight. Since it can be worn for up to 12 hours, you don't need to worry about overnight leakage or changing it while you sleep, as long as it's emptied before bedtime.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How do I clean and care for my menstrual cup?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Before and after each cycle, sterilize your menstrual cup by boiling it in water for 3-5 minutes. During your period, wash the cup with mild soap and water every time you empty it. Avoid using harsh chemicals or scented soaps.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I use a menstrual cup if I have an IUD?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, but you need to be cautious. Consult your healthcare provider before using a menstrual cup with an IUD to ensure correct positioning and to avoid dislodging the IUD when removing the cup. Always break the suction seal before removing the cup.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are menstrual cups safe and eco-friendly?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, menstrual cups are made of medical-grade silicone or rubber, making them safe for your body. They are also eco-friendly because they are reusable and can last up to 10 years, significantly reducing menstrual product waste.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can teens or first-time users use a menstrual cup?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, teens and first-time users can use a menstrual cup. Some companies offer smaller sizes specifically designed for younger people or those with lighter flows. It may take some practice to get used to inserting and removing the cup.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What should I do if I experience discomfort while using a menstrual cup?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">If you experience discomfort, try adjusting the position or checking the size of the cup. It might be too large or not positioned correctly. Ensure the stem is trimmed if it's too long. If discomfort persists, consult a healthcare professional.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="space-y-4 md:space-y-6 xl:space-y-9 fqtab_content" id="wipes">
+              <h3>Wipes</h3>
+              <div class="w-full">
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What Are Menstrual Wipes Used For?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Menstrual wipes are used for quick and convenient cleaning during periods. They help maintain freshness and hygiene, especially when water or a bathroom is not readily available.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are Menstrual Wipes Safe for Sensitive Skin?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, many menstrual wipes are specifically designed for sensitive skin. Look for alcohol-free, fragrance-free, and pH-balanced wipes to minimize the risk of irritation.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I Flush Menstrual Wipes?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">No, most menstrual wipes are not flushable as they can cause plumbing blockages. Always dispose of them in the trash unless the packaging specifically says they are flushable.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can Menstrual Wipes Be Used Instead of Regular Toilet Paper?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, menstrual wipes can be used as a supplement to toilet paper during periods for a more thorough clean, especially when managing discharge or menstrual flow.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are Menstrual Wipes Eco-Friendly?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Some brands offer biodegradable or eco-friendly menstrual wipes. However, standard wipes are often not biodegradable, so be sure to check the packaging for environmentally friendly options.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I Use Menstrual Wipes with Other Period Products?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, menstrual wipes can be safely used alongside tampons, pads, menstrual cups, and liners for extra hygiene and comfort during your period.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Do Menstrual Wipes Affect the Vaginal pH Balance?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Many menstrual wipes are formulated to be pH-balanced and safe for intimate use. However, using heavily scented or harsh wipes may disrupt the natural pH balance of the vaginal area.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are Menstrual Wipes Suitable for Daily Use?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, menstrual wipes are safe for daily use, but it’s important to choose wipes that are gentle and free of harsh chemicals to avoid irritation with frequent use.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How Do I Choose the Best Menstrual Wipes?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">When selecting menstrual wipes, look for products that are hypoallergenic, pH-balanced, free of alcohol and fragrance, and dermatologically tested for safe use in the intimate area.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can Menstrual Wipes Be Used During Pregnancy?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, menstrual wipes can be used during pregnancy for maintaining personal hygiene, but it's important to choose wipes that are gentle and free from harmful chemicals to avoid irritation.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="space-y-4 md:space-y-6 xl:space-y-9 fqtab_content" id="hot_water_bag">
+              <h3>Hot Water Bag</h3>
+              <div class="w-full">
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How Does a Hot Water Bag Help with Menstrual Cramps?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Heat from a hot water bag relaxes the muscles of the uterus, improving blood flow and reducing the severity of cramps. It also helps ease muscle tension and increases overall comfort.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Is It Safe to Use a Hot Water Bag During Periods?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, using a hot water bag is safe during periods. However, ensure the temperature is comfortable to prevent burns or skin irritation. Always use a cover to avoid direct contact with the skin.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>How Long Should I Use a Hot Water Bag for Menstrual Pain?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">You can use a hot water bag for 15-20 minutes at a time. If necessary, take short breaks and reapply. Continuous long exposure may cause discomfort or minor burns.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can a Hot Water Bag Reduce Period Bloating?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, applying heat can help relieve bloating by improving circulation and relaxing abdominal muscles, which may alleviate the discomfort associated with bloating during menstruation.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Where Should I Place the Hot Water Bag for Menstrual Pain?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Place the hot water bag on your lower abdomen where cramps typically occur. You can also place it on your lower back if you experience back pain during your period.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Are There Any Alternatives to a Hot Water Bag for Menstrual Cramps?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">Yes, alternatives include electric heating pads, microwavable heat packs, warm baths, or using a warm towel. These options also provide soothing heat to ease menstrual discomfort.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can I Sleep with a Hot Water Bag During My Period?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">It is not recommended to sleep with a hot water bag as it may cause burns or leaks. Instead, use it before sleep and remove it once you're feeling more comfortable.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Can a Hot Water Bag Help with Severe Menstrual Cramps?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">While a hot water bag can provide relief for mild to moderate cramps, it may not be enough for severe cramps. In such cases, it is best to consult a healthcare professional for additional treatment options.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5 border-b border-[#BCCAD9]">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>What Should I Do If the Hot Water Bag Causes Skin Irritation?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">If you experience skin irritation or burns, stop using the hot water bag immediately. Apply a cold compress to the irritated area and consult a doctor if necessary. Always ensure the water is not too hot and use a cloth cover.</p>
+                      </div>
+                  </div>
+                  <div class="w-full space-y-2.5 md:space-y-4 py-3.5 lg:py-5">
+                      <div class="flex items-center justify-between space-x-2 title_tab_3 cursor-pointer">
+                          <h4>Is a Hot Water Bag More Effective Than Painkillers for Menstrual Cramps?</h4>
+                          <span class="icon-down-arrow text-20 2xl:text-24 text-primary"></span>
+                      </div>
+                      <div class="inner_content_3 max-w-[1386px]">
+                        <p class="text18 text-secondary font-light">A hot water bag is a natural, drug-free way to relieve cramps and can be very effective. However, if pain is severe, combining heat therapy with over-the-counter painkillers (like ibuprofen) may provide more comprehensive relief. Always follow medical advice regarding pain management.</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
         </div>
-        <img src="assets/images/flower_laft.webp" class="flo_left absolute hidden md:block left-4 bottom-20 max-w-20 md:max-w-28 2xl:max-w-36 z-10" alt="flower_right"/>
-        <img src="assets/images/flower_laft.webp" class="flo_left absolute hidden md:block left-4 bottom-96 max-w-20 md:max-w-28 2xl:max-w-36 z-10" alt="flower_right"/>
-        <img src="assets/images/flower_right.webp" class="flo_right absolute hidden md:block -right-14 bottom-20  max-w-32 md:max-w-40 2xl:max-w-60 z-10" alt="flower_right"/>
-        <img src="assets/images/flower_right.webp" class="flo_right absolute hidden md:block -right-14 bottom-64  max-w-32 md:max-w-40 2xl:max-w-60 z-10" alt="flower_right"/>
-        <img src="assets/images/flower_right.webp" class="flo_right absolute hidden md:block right-10 top-2  max-w-32 md:max-w-40 2xl:max-w-60 z-10" alt="flower_right"/>
+        <img src="assets/images/flower_laft.webp" class="flo_left absolute hidden md:block left-4 bottom-96 max-w-20 md:max-w-28 2xl:max-w-36" alt="flower_right"/>
+        <img src="assets/images/flower_right.webp" class="flo_right absolute hidden md:block -right-14 bottom-20  max-w-32 md:max-w-40 2xl:max-w-60" alt="flower_right"/>
+        <img src="assets/images/flower_right.webp" class="flo_right absolute hidden md:block right-10 top-2  max-w-32 md:max-w-40 2xl:max-w-60" alt="flower_right"/>
     </section>
     <footer class="lg:px-2 overflow-hidden">
         <div class="relative">
@@ -735,5 +1233,16 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.fq_tabs button').click(function () {
+          var tab_id = $(this).attr('data-tab');
+          $('.fq_tabs button').removeClass('active');
+          $('.fqtab_content').removeClass('active');
+          $(this).addClass('active');
+          $("#" + tab_id).addClass('active');
+        });
+      });
+    </script>
 </body> 
 </html>
